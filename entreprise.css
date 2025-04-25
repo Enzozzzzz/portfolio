@@ -1,0 +1,629 @@
+/* Page Stage Entreprise */
+/* Styles spécifiques pour la page Thales */
+.etat {
+    text-align: center;
+}
+.etat > h2 > a {
+    color: var(--color-12);
+}
+
+#titre {
+    margin: 0;
+    padding: 0;
+    font-size: 260%;
+}
+
+hr {
+    margin: 2%;
+    padding: 0;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: var(--color-12);
+    border: 1px solid var(--color-12);
+    background-color: var(--color-12);
+}
+
+#liens {
+    color: var(--color-12);
+}
+
+.outils {
+    padding: 2%;
+    text-align: left;
+    padding-left: 5%;
+    line-height: 150%;
+}
+
+/* Scroll top */
+#scroll_to_top {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--color-8);
+    padding: 5px;
+}
+
+#scroll_to_top img {
+    width: 25px;
+    text-align: center;
+}
+
+/* Chiffres clés */
+.chiffres_clés {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    align-items: center;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.data-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20.75em;
+    min-height: 30em;
+    min-width: 20em;
+    overflow: hidden;
+    border-radius: 0.5em;
+    text-decoration: none;
+    background: var(--color-3);
+    margin: 1em;
+    padding: 2.75em 2.5em;
+    box-shadow: 0 1.5em 2.5em -0.5em rgba(0, 0, 0, 0.1);
+    transition: transform 0.45s ease, 0.45s ease;
+}
+
+.data-card h3 {
+    color: var(--color-12);
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 0.5em;
+    margin: 0 0 0.142857143em;
+    border-bottom: 2px solid var(--color-7);
+    transition: color 0.45s ease, border 0.45s ease;
+}
+
+.data-card h4 {
+    color: var(--color-11);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: 0 0 1em;
+    transition: color 0.45s ease;
+}
+
+.data-card h5 {
+    color: var(--color-10);
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    margin: 0 0 1.5em;
+    transition: color 0.45s ease;
+}
+
+.data-card p {
+    opacity: 0;
+    color: var(--color-10);
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 0 0 1.25em;
+    transform: translateY(-1em);
+    transition: opacity 0.45s ease, transform 0.5s ease;
+}
+
+.data-card .link-text {
+    display: block;
+    color: var(--color-7);
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+    transition: color 0.45s ease;
+}
+
+.data-card:hover {
+    background-image: linear-gradient(144deg, var(--color-4), var(--color-5), var(--color-6));
+    transform: scale(1.02);
+}
+
+.data-card:hover h3 {
+    color: var(--color-12);
+    border-bottom-color: var(--color-7);
+}
+
+.data-card:hover h4 {
+    color: var(--color-12);
+}
+
+.data-card:hover h5 {
+    visibility: hidden;
+}
+
+.data-card:hover p {
+    opacity: 1;
+    transform: none;
+}
+.data-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animations pour Data Cards */
+@-webkit-keyframes point {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(0.125em); }
+}
+@keyframes point {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(0.125em); }
+}
+
+/* Section Dynamique */
+.dynamic-grid-section {
+    padding: 4rem 2rem;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, var(--color-9), var(--color-7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Section Rapports de Stage */
+.documents-section {
+    padding: 4rem 1rem;
+    background: var(--color-2);
+    min-height: 70vh;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-12);
+    margin-bottom: 3rem;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.document-card {
+    background: var(--color-3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.document-year {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-12);
+}
+
+.document-badge {
+    background: var(--color-7);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.card-content h3 {
+    color: var(--color-12);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.document-description {
+    color: var(--color-11);
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+
+/* Nouveaux styles pour téléchargements multiples */
+.downloads-list {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--color-12);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.download-item i {
+    width: 25px;
+    margin-right: 1rem;
+    font-size: 1.2em;
+}
+
+.download-item:hover {
+    background: var(--color-4);
+    transform: translateX(5px);
+    border-color: var(--color-7);
+}
+
+/* Couleurs des icônes */
+.fa-file-pdf { color: #e74c3c; }
+.fa-file-archive { color: #f1c40f; }
+.fa-file-powerpoint { color: #e67e22; }
+.fa-code { color: #3498db; }
+
+.download-button {
+    margin-top: auto;
+    background: var(--color-8);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s ease;
+}
+
+.download-button:hover {
+    background: var(--color-9);
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .documents-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .download-item {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+/* Autres Entreprises */
+.container_rectangle {
+    display: flex;
+    height: 500px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: var(--color-3);
+}
+
+.rectangle {
+    min-height: 400px;
+    min-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 500px;
+    height: 300px;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background-color: hsla(300, 50%, 99%, 0.25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+#rect1 {
+    background-position: center;
+    background-image: url("/images/Entreprise/thales-logo-building-a-future-we-can-all-trust.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#rect2 {
+    background-position: center;
+    background-image: url("/images/Entreprise/logo_DIRISI.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+#rect1:hover,
+#rect2:hover {
+    background-color: hsla(270, 50%, 25%, 0.3);
+}
+
+/* Explorateur de fichiers */
+.explorer-container {
+    background-color: var(--color-3);
+    border: 1px solid var(--color-6);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.explorer-nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.explorer-nav .breadcrumb {
+    font-size: 1rem;
+    color: var(--color-12);
+}
+
+.explorer-nav .breadcrumb .folder {
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: var(--color-4);
+    border-radius: 4px;
+}
+
+.explorer-nav .breadcrumb .separator {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.explorer-box {
+    transform: translateY(50px) rotateX(15deg);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.explorer-box.visible {
+    transform: translateY(0) rotateX(0);
+    opacity: 1;
+}
+
+.explorer-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--color-9), var(--color-7), var(--color-5));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.explorer-box:hover::before {
+    opacity: 0.1;
+}
+
+.explorer-box:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.file-icon {
+    transition: transform 0.4s ease;
+}
+
+.explorer-box:hover .file-icon {
+    transform: rotate(15deg) scale(1.2);
+    filter: drop-shadow(0 0 8px var(--color-9));
+}
+
+.download-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.download-link::after {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.6s;
+}
+
+.download-link:hover::after {
+    left: 100%;
+}
+/* Navigation entre les stages */
+.navigation-section {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 0 1rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 2.5rem;
+    background-color: var(--color-7);
+    color: var(--color-3);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-9);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-button i {
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover i {
+    transform: translateX(-5px);
+}
+
+@media (max-width: 768px) {
+    .back-button {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes file-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shadow-pulse {
+    0%, 100% { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    50% { box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+}
+
+.explorer-box {
+    animation: shadow-pulse 3s ease-in-out infinite;
+}
+
+.file-icon {
+    animation: file-float 4s ease-in-out infinite;
+}
+
+.parallax-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-container {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotateX(0) rotateY(0); }
+    50% { transform: translateY(-20px) rotateX(5deg) rotateY(5deg); }
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.neon-text {
+    text-shadow: 0 0 10px var(--color-9), 0 0 20px var(--color-9), 0 0 30px var(--color-9);
+    animation: neon-pulse 1.5s infinite alternate;
+}
+
+@keyframes neon-pulse {
+    from { opacity: 0.8; }
+    to { opacity: 1; }
+}
+
+.holographic-effect::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, var(--color-9) 25%, var(--color-10) 50%, var(--color-7) 75%);
+    opacity: 0.1;
+    animation: hologram 8s infinite linear;
+    mix-blend-mode: overlay;
+}
+
+@keyframes hologram {
+    0% { transform: rotate(0deg) translate(-50%, -50%); }
+    100% { transform: rotate(360deg) translate(-50%, -50%); }
+}
+
+/* Footer animé */
+.animated-footer {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
+    background-color: var(--color-3);
+}
+
+.footer-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('wave.svg') repeat-x;
+    animation: wave-animation 10s linear infinite;
+}
+
+@keyframes wave-animation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}

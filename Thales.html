@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BTS SIO SISR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="entreprise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html #home">Accueil</a></li>
+                <li><a href="index.html #about">Présentation</a></li>
+                <li><a href="index.html #skills">Compétences</a></li>
+                <li><a href="index.html #projects">Projets</a></li>
+                <li><a href="index.html #contact">Contact</a></li>
+            </ul>
+            <!-- Bouton pour basculer entre le mode clair et le mode sombre -->
+            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+                <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                    <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                    </mask>
+                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                    <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Section Home avec effet de parallaxe -->
+    <section class="etat parallax-section">
+        <div class="logo-container">
+            <img src="media/media-Thales/logo-thales.webp" alt="logo_tereos" class="entreprise-logo">
+        </div>
+    </section>
+
+    <!-- Section Présentation de l'entreprise -->
+    <section id="presentation" class="floating-section">
+        <div class="presentation-content glassmorphism">
+            <h2 class="section-title dynamic-underline">Présentation de Thales</h2>
+            <p class="animated-text">Thales est une entreprise mondiale spécialisée dans les technologies de l'aérospatial, de la défense, de la sécurité et du transport. 
+                Fondée en 1893, Thales est aujourd'hui un leader dans les systèmes d'information critiques, les systèmes de sécurité, et les solutions de défense. 
+                Avec plus de 80 000 employés dans 68 pays, Thales est reconnue pour son innovation et son expertise technique.</p>
+        </div>
+    </section>
+
+    <!-- Section Chiffres clés -->
+    <section class="chiffres_clés">
+        <h2 class="section-title neon-text">Chiffres clés</h2>
+        <div class="data-grid">
+            <div class="data-card hover-glow">
+                <h3>16 milliards</h3>
+                <h4>Chiffre d'affaires</h4>
+                <h5>(Plus d'informations)</h5>
+                <p><strong> 1 milliards </strong>de bénéfices <br>
+                    <a rel="stylesheet" href="https://fr.wikipedia.org/wiki/Thales" id="liens" target="_blank" rel="noreferrer"> (Plus d'information) </a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>Société Française</h3>
+                <h4>Nationnalité</h4>
+                <h5>(Plus d'informations)</h5>
+                <p>
+                    Anciennement : <strong> Thomson Houston </strong>, l'entreprise a vu le jour en 1893.<br>
+                    L'entreprise s'est spécialisé dans le secteur de la defense <br>
+                    <a href="https://fr.wikipedia.org/wiki/Thales" id="liens" target="_blank" rel="noreferrer"> (Plus d'information) </a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>77 000</h3>
+                <h4>Effectifs</h4>
+                <h5>(Plus d'informations)</h5>
+                <p>
+                    Présent dans <strong> 68 pays </strong><br>
+                    <a href="https://fr.wikipedia.org/wiki/Thales" id="liens" target="_blank" rel="noreferrer"> (Plus d'information) </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Thales SIX GTS -->
+    <section class="chiffres_clés">
+        <h2 class="section-title neon-text">Thales SIX GTS</h2>
+        <div class="data-grid">
+            <div class="data-card hover-glow">
+                <h3>7 000</h3>
+                <h4>Personnels</h4>
+                <h5>(Plus d'informations)</h5>
+                <p> Thales SIX GTS France concentre plus de la moitié <br> des activités du groupe Thales (environ 3 milliards d’euros) <br>
+                    <a rel="stylesheet" href="https://fr.wikipedia.org/wiki/Thales_SIX_GTS_France" id="liens" target="_blank" rel="noreferrer"> (Plus d'information) </a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>Gennevil- <br> -liers</h3>
+                <h4>Siege Social</h4>
+                <h5>(Plus d'informations)</h5>
+                <p> Avec Thales SIX GTS France, Thales se positionne comme le numéro un européen et parmi les premiers mondiaux des systèmes d’information et de communication sécurisés pour les marchés de la défense, de la sécurité et du transport terrestre, et comme un acteur majeur de la cybersécurité <br>
+                    <a href="https://fr.wikipedia.org/wiki/Thales_SIX_GTS_France" id="liens" target="_blank" rel="noreferrer"> (Plus d'information) </a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>4</h3>
+                <h4>Activitées</h4>
+                <h5>(Plus d'informations)</h5>
+                <p>
+                    &#10004 Défense <br>
+                    &#10004 Sécurité <br>
+                    &#10004 Transport terrestre <br>
+                    &#10004 Services <br>
+                    <a href="https://fr.wikipedia.org/wiki/Thales_SIX_GTS_France" id="liens" target="_blank" rel="noreferrer"> (Plus d'information) </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dans la section Rapports de stage -->
+    <section class="documents-section">
+        <h2 class="section-title neon-text">📁 Rapports de Stage</h2>
+        
+        <div class="documents-grid">
+            <!-- Carte pour le stage 2024 -->
+            <article class="document-card ">
+                <div class="card-header">
+                    <span class="document-year">2024</span>
+                    <div class="document-badge">Complet</div>
+                </div>
+                <div class="card-content">
+                    <h3>Stage chez Thales SIX GTS</h3>
+                    <p class="document-description">
+                        Développement d'une solution IoT pour la gestion de flotte
+                    </p>
+                    
+                    <div class="downloads-list">
+                        <a href="doc/Doc-Thales/Stage-thales.pdf" class="download-item">
+                            <i class="fas fa-file-pdf"></i>
+                            Rapport complet (PDF - 2.4 Mo)
+                        </a>
+                        
+                        <a href="doc/Doc-Thales/Graph_SAT.exe" class="download-item">
+                            <i class="fas fa-code"></i>
+                            Graphique-SAT.py (EXE - 15 Mo)
+                        </a>
+                        
+                        <a href="doc/Doc-Thales/scrpt-Graph-SAT.pdf" class="download-item">
+                            <i class="fas fa-file-pdf"></i>
+                            Script-Graphique-SAT (PDF - 8.2 Mo)
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <div class="navigation-section">
+        <a href="index.html#stage" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Voir les autres stages
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="animated-footer">
+        <div class="footer-wave"></div>
+        <p class="footer-text floating">&copy; 2025 Portfolio BTS SIO - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

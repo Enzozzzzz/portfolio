@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BTS SIO SISR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="entreprise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html #home">Accueil</a></li>
+                <li><a href="index.html #about">Présentation</a></li>
+                <li><a href="index.html #skills">Compétences</a></li>
+                <li><a href="index.html #projects">Projets</a></li>
+                <li><a href="index.html #contact">Contact</a></li>
+            </ul>
+            <!-- Bouton pour basculer entre le mode clair et le mode sombre -->
+            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+                <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                    <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                    </mask>
+                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                    <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Section Home avec effet de parallaxe -->
+    <section class="etat parallax-section">
+        <canvas class="particles-canvas"></canvas>
+        <div class="logo-container">
+            <img src="media/media-tereos/logo__0012_tereos-768x212.webp" alt="logo_tereos" class="entreprise-logo pulse">
+        </div>
+    </section>
+
+    <!-- Section Présentation de l'entreprise -->
+    <section id="presentation" class="floating-section">
+        <div class="presentation-content glassmorphism">
+            <h2 class="section-title dynamic-underline">Présentation de Tereos</h2>
+            <p class="animated-text">Tereos est un groupe coopératif sucrier français spécialisé dans la transformation de produits agricoles tels que la betterave sucrière, la canne à sucre et les céréales. Fondée en 2002 suite à la fusion de plusieurs sucreries et distilleries, Tereos est aujourd’hui un acteur majeur dans l’industrie agroalimentaire. Avec environ 19 800 employés dans 15 pays, Tereos est reconnue pour son engagement envers la durabilité et l’innovation dans la production de sucre, d’alcool et d’amidon.</p>
+        </div>
+    </section>
+
+    <!-- Section Chiffres clés -->
+    <section class="chiffres_clés">
+        <h2 class="section-title neon-text">Chiffres clés</h2>
+        <div class="data-grid">
+            <div class="data-card hover-glow">
+                <h3>7,14 milliards</h3>
+                <h4>Chiffre d'affaires</h4>
+                <h5>(Plus d'informations)</h5>
+                <p><strong>1,13 milliards</strong> de bénéfices<br>
+                    <a rel="stylesheet" href="https://fr.wikipedia.org/wiki/Tereos" id="liens" target="_blank" rel="noreferrer">(Plus d'information)</a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>Société Française</h3>
+                <h4>Nationalité</h4>
+                <h5>(Plus d'informations)</h5>
+                <p>Anciennement : <strong>Béghin Say</strong>, l’entreprise a vu le jour en 2002 suite à la fusion de plusieurs sucreries et distilleries.<br>
+                    <a href="https://fr.wikipedia.org/wiki/Tereos" id="liens" target="_blank" rel="noreferrer">(Plus d'information)</a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>19800</h3>
+                <h4>Effectifs</h4>
+                <h5>(Plus d'informations)</h5>
+                <p>Présent dans <strong>15 pays</strong><br>
+                    <a href="https://fr.wikipedia.org/wiki/Thales" id="liens" target="_blank" rel="noreferrer">(Plus d'information)</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tereos Artenay -->
+    <section class="chiffres_clés">
+        <h2 class="section-title neon-text">Tereos Artenay</h2>
+        <div class="data-grid">
+            <div class="data-card hover-glow">
+                <h3>152 000T</h3>
+                <h4>Production annuelle</h4>
+                <h5>(Plus d'informations)</h5>
+                <p><strong><u>Sucre</u></strong>: 14 000 tonnes par an<br>
+                    <strong><u>Alcool</u></strong>: 100 000 litres par an<br>
+                    <strong><u>Betterave</u></strong>: 38 000 tonnes par an<br>
+                    <a rel="stylesheet" href="https://fr.wikipedia.org/wiki/Tereos" id="liens" target="_blank" rel="noreferrer">(Plus d'information)</a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>Artenay</h3>
+                <h4>Marché cible et produits</h4>
+                <h5>(Plus d'informations)</h5>
+                <p><strong><u>Agroalimentaire</u></strong>: 70% des produits destinés à l’industrie agroalimentaire.<br>
+                    <strong><u>Biocarburants</u></strong>: 30% des produits destinés à la production de bioéthanol.<br>
+                    <strong><u>Produits spécifiques</u></strong>: Sucre et alcool issus de betteraves bio.<br>
+                    <a href="https://fr.wikipedia.org/wiki/Tereos" id="liens" target="_blank" rel="noreferrer">(Plus d'information)</a>
+                </p>
+            </div>
+            <div class="data-card hover-glow">
+                <h3>250</h3>
+                <h4>Effectifs</h4>
+                <h5>(Plus d'informations)</h5>
+                <p><strong><u>Salarié permanent</u></strong>: 160 salariés.<br>
+                    <strong><u>Saisonier</u></strong>: 90 saisonniers pendant la campagne sucrière.<br>
+                    <strong><u>Formation et sécurité</u></strong>: Programmes de formation continue pour les employés et mesures de sécurité strictes pour garantir un environnement de travail sûr.<br>
+                    <a href="https://fr.wikipedia.org/wiki/Tereos" id="liens" target="_blank" rel="noreferrer">(Plus d'information)</a>
+                </p>
+            </div>
+        </div>
+    </section>
+   <!-- Dans la section Rapports de stage -->
+   <section class="documents-section">
+    <h2 class="section-title neon-text">📁 Rapports de Stage</h2>
+    
+    <div class="documents-grid">
+        <!-- Carte pour le stage 2024 -->
+        <article class="document-card ">
+            <div class="card-header">
+                <span class="document-year">2024</span>
+                <div class="document-badge">Complet</div>
+            </div>
+            <div class="card-content">
+                <h3>Stage Tereos Artenay</h3>
+                <p class="document-description">
+                    Participation à des projets de Mise en Œuvre de Systèmes (MES) et de Sécurité (BASTION)
+                </p>
+                
+                <div class="downloads-list">
+                    <a href="doc/Doc-Tereos/Rapport-stage-2024.pdf" class="download-item">
+                        <i class="fas fa-file-pdf"></i>
+                        Rapport complet (PDF - 2.4 Mo)
+                    </a>
+                    
+                    <a href="/docs/annexes.zip" class="download-item">
+                        <i class="fas fa-file-archive"></i>
+                        Annexes techniques (ZIP - 15 Mo)
+                    </a>
+                    
+                    <a href="/docs/presentation.pptx" class="download-item">
+                        <i class="fas fa-file-powerpoint"></i>
+                        Présentation (PPTX - 8.2 Mo)
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Carte pour le stage 2023 -->
+        <article class="document-card ">
+            <div class="card-header">
+                <span class="document-year">2025</span>
+                <div class="document-badge">Archivé</div>
+            </div>
+            <div class="card-content">
+                <h3>Stage Tereos Artenay</h3>
+                <p class="document-description">
+                    Développement de Scripts Python pour l'Automatisation et l'Amélioration de Processus 
+                </p>
+                
+                <div class="downloads-list">
+                    <a href="/pdf/rapport_2023.pdf" class="download-item">
+                        <i class="fas fa-file-pdf"></i>
+                        Rapport principal (PDF - 1.8 Mo)
+                    </a>
+                    <a href="doc/Doc-Tereos/affichage.exe" class="download-item">
+                        <i class="fas fa-code"></i>
+                        Affichage.py (EXE - 5 Mo)
+                    </a>
+                    <a href="doc/Doc-Tereos/script_bck_automate.pdf" class="download-item">
+                        <i class="fas fa-file-pdf"></i>
+                        Codes sources (PDF - 5 Mo)
+                    </a>
+                    
+                    <a href="doc/Doc-Tereos/backup.exe" class="download-item">
+                        <i class="fas fa-code"></i>
+                        Backup.py (EXE - 5 Mo)
+                    </a>
+
+                    <a href="doc/Doc-Tereos/script_bck_automate.pdf" class="download-item">
+                        <i class="fas fa-file-pdf"></i>
+                        Codes sources (PDF - 5 Mo)
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+    </section>
+
+
+    <div class="navigation-section">
+        <a href="index.html#stage" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Voir les autres stages
+        </a>
+    </div>
+
+
+<!-- Le footer existant reste après -->
+
+    <!-- Footer -->
+    <footer class="animated-footer">
+        <div class="footer-wave"></div>
+        <p class="footer-text floating">&copy; 2025 Portfolio BTS SIO - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

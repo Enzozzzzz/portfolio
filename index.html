@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - BTS SIO SISR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="media/flavico.png" type="image/x-icon">
+</head>
+<body data-theme="light">
+    <!-- Barre de navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#equipe">Profil</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#stage">Stage</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Bouton pour basculer entre le mode clair et le mode sombre -->
+            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+                <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                    <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                    </mask>
+                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                    <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Section Home -->
+    <section id="home" class="parallax">
+        <video autoplay loop muted playsinline id="background-video-light">
+            <source src="media/media-index/Backlight.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop muted playsinline id="background-video-dark">
+            <source src="media/media-index/Backdark.mp4" type="video/mp4">
+        </video>
+        <div class="home-content">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Découvrez mes compétences, mes projets et mon parcours en BTS SIO option SISR.</p>
+            <a href="#equipe" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Équipe -->
+    <section id="equipe">
+        <h2 class="section-title">Profil</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="card-content">
+                    <div class="profile-image">
+                        <img src="media/media-index/pp.jpeg" alt="Enzo Gravellier" class="profile-img">
+                    </div>
+                    <div class="member-info">
+                        <h3>Enzo Gravellier</h3>
+                        <p class="role">Étudiant en BTS SIO SISR</p>
+                        <div class="bio">
+                            <p>Passionné par l'administration système et réseau, je mets mes compétences au service de projets innovants.</p>
+                        </div>
+                        <div class="contact-details">
+                            <ul>
+                                <li><i class="fas fa-envelope"></i> engravellier@stpbb.org</li>
+                                <li><i class="fas fa-phone"></i> +33 6 23 52 10 64</li>
+                                <li><i class="fas fa-map-marker-alt"></i> Orléans, France</li>
+                            </ul>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="cv-download">
+                            <a href="doc/Doc-index/CV.pdf" download class="project-link">
+                                <i class="fas fa-download"></i>
+                                Télécharger mon CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Mon Parcours -->
+    <section id="parcours">
+        <h2 class="section-title">Mon Parcours</h2>
+        <div class="timeline">
+            <!-- Étape 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2023/2025 - BTS SIO Option SISR</h3>
+                    <p>
+                        J'ai commencé ma formation en BTS Services Informatiques aux Organisations, option Solutions d'Infrastructure, Systèmes et Réseaux.
+                        J'ai acquis des compétences en administration système, virtualisation et sécurité informatique.
+                    </p>
+                    <a href="Projet-IUTo.html" class="project-link">En savoir plus</a>
+                </div>
+            </div>
+
+            <!-- Étape 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2020/2023 - Bac pro Système numérique option RISC</h3>
+                    <p>
+                        J’ai obtenu mon baccalauréat professionnel Système numérique, option Réseaux Informatiques et Systèmes Communicants (RISC).
+                        Cela m’a permis de découvrir les bases de l’informatique, des réseaux et des systèmes de communication.
+                    </p>
+                    <a href="Projet-IUTo.html" class="project-link">En savoir plus</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Section Compétences -->
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <!-- Carte 1 : Administration des systèmes et réseaux -->
+            <div class="card">
+                <i class="fas fa-server fa-3x"></i>
+                <h3>Administration des systèmes et réseaux</h3>
+                <div class="card__content">
+                    <p class="card__title">Administration des systèmes et réseaux</p>
+                    <p class="card__description">
+                        Installer, configurer et maintenir des systèmes d’exploitation (Windows Server, Linux).<br>
+                        Gérer les services réseau (DHCP, DNS, Active Directory, etc.).<br>
+                        Mettre en place des stratégies de sécurité (GPO, droits d’accès, pare-feu).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carte 2 : Virtualisation et cloud computing -->
+            <div class="card">
+                <i class="fas fa-cloud fa-3x"></i>
+                <h3>Virtualisation et cloud computing</h3>
+                <div class="card__content">
+                    <p class="card__title">Virtualisation et cloud computing</p>
+                    <p class="card__description">
+                        Déployer des machines virtuelles avec Hyper-V, Xcp-NG, Proxmox.<br>
+                        Automatiser des tâches via des scripts (PowerShell, Bash).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carte 3 : Sécurité informatique -->
+            <div class="card">
+                <i class="fas fa-shield-alt fa-3x"></i>
+                <h3>Sécurité informatique</h3>
+                <div class="card__content">
+                    <p class="card__title">Sécurité informatique</p>
+                    <p class="card__description">
+                        Mettre en place des solutions de sauvegarde et de restauration.<br>
+                        Détecter et corriger des failles de sécurité.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carte 4 : Interconnexion de réseaux -->
+            <div class="card">
+                <i class="fas fa-network-wired fa-3x"></i>
+                <h3>Interconnexion de réseaux</h3>
+                <div class="card__content">
+                    <p class="card__title">Interconnexion de réseaux</p>
+                    <p class="card__description">
+                        Configurer des équipements réseau (switchs, routeurs, pare-feu).<br>
+                        Maîtriser les protocoles de communication (TCP/IP, VLAN, VPN, Wi-Fi).<br>
+                        Superviser le réseau avec des outils de monitoring (Zabbix).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carte 5 : Développement et automatisation -->
+            <div class="card">
+                <i class="fas fa-code fa-3x"></i>
+                <h3>Développement et automatisation</h3>
+                <div class="card__content">
+                    <p class="card__title">Développement et automatisation</p>
+                    <p class="card__description">
+                        Écrire des scripts d’automatisation (Python, PowerShell, Bash).<br>
+                        Exploiter des bases de données (SQL, MySQL).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carte 6 : Gestion de projet et support technique -->
+            <div class="card">
+                <i class="fas fa-tasks fa-3x"></i>
+                <h3>Gestion de projet et support technique</h3>
+                <div class="card__content">
+                    <p class="card__title">Gestion de projet et support technique</p>
+                    <p class="card__description">
+                        Rédiger des documents techniques et des procédures.<br>
+                        Suivre et gérer un projet informatique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+            <!-- Carte RGPD CNIL -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fas fa-shield-alt certification-icon"></i>
+                    <h3>RGPD CNIL</h3>
+                </div>
+                <p class="certification-description">
+                    Certification en protection des données personnelles et conformité RGPD
+                </p>
+                <div class="certification-footer">
+                    <span class="certification-provider">CNIL</span>
+                </div>
+            </div>
+
+            <!-- Carte SecNum ANSSI -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fas fa-lock certification-icon"></i>
+                    <h3>SecNum ANSSI Cybersécurité</h3>
+                </div>
+                <p class="certification-description">
+                    Attestation de sensibilisation à la cybersécurité délivrée par l'ANSSI
+                </p>
+                <div class="certification-footer">
+                    <span class="certification-provider">ANSSI</span>
+                </div>
+            </div>
+
+            <!-- Carte Voltaire -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fas fa-pen-fancy certification-icon"></i>
+                    <h3>Certification Voltaire</h3>
+                </div>
+                <p class="certification-description">
+                    Certification en orthographe française niveau Expert
+                </p>
+                <div class="certification-footer">
+                    <span class="certification-provider">Voltaire</span>
+                </div>
+            </div>
+
+            <!-- Carte Netacad -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fas fa-cloud certification-icon"></i>
+                    <h3>Virtualisation & Cloud Computing</h3>
+                </div>
+                <p class="certification-description">
+                    Certification Cisco NetAcad en infrastructures virtualisées
+                </p>
+                <div class="certification-footer">
+                    <span class="certification-provider">Cisco NetAcad</span>
+                </div>
+            </div>
+            
+            <!--carte PIX -->
+        <div class="certification-card">
+            <div class="certification-header">
+                <i class="fas fa-digital-tachograph certification-icon"></i>
+                <h3>Certification PIX</h3>
+            </div>
+            <p class="certification-description">
+                Certification globale des compétences numériques avec score maximal
+            </p>
+            <div class="certification-footer">
+                <span class="certification-provider">PIX</span>
+            </div>
+        </div>
+
+        <!--carte AWS Cloud -->
+        <div class="certification-card">
+            <div class="certification-header">
+                <i class="fab fa-aws certification-icon"></i>
+                <h3>Cloud Practitioner AWS</h3>
+            </div>
+            <p class="certification-description">
+                Fondamentaux du cloud computing avec Amazon Web Services
+            </p>
+            <div class="certification-footer">
+                <span class="certification-provider">Amazon Web Services</span>
+            </div>
+        </div>
+
+        <!--carte AZ-900 -->
+        <div class="certification-card">
+            <div class="certification-header">
+                <i class="fab fa-microsoft certification-icon"></i>
+                <h3>AZ-900 Microsoft Azure</h3>
+            </div>
+            <p class="certification-description">
+                Fondamentaux de Microsoft Azure - Cloud Services
+            </p>
+            <div class="certification-footer">
+                <span class="certification-provider">Microsoft</span>
+            </div>
+        </div>
+
+        <!--carte Python -->
+        <div class="certification-card">
+            <div class="certification-header">
+                <i class="fab fa-python certification-icon"></i>
+                <h3>Python avancé</h3>
+            </div>
+            <p class="certification-description">
+                Programmation Python et automatisation de tâches
+            </p>
+            <div class="certification-footer">
+                <span class="certification-provider">OpenClassrooms</span>
+            </div>
+        </div>
+
+        <!--carte GLPI -->
+        <div class="certification-card">
+            <div class="certification-header">
+                <i class="fas fa-tools certification-icon"></i>
+                <h3>Administration GLPI</h3>
+            </div>
+            <p class="certification-description">
+                Gestion de parc informatique et helpdesk
+            </p>
+            <div class="certification-footer">
+                <span class="certification-provider">OpenClassrooms</span>
+            </div>
+        </div>
+
+        <!--carte Excel -->
+        <div class="certification-card">
+            <div class="certification-header">
+                <i class="fas fa-file-excel certification-icon"></i>
+                <h3>Excel expert</h3>
+            </div>
+            <p class="certification-description">
+                Tableaux croisés dynamiques et macros VBA
+            </p>
+            <div class="certification-footer">
+                <span class="certification-provider">OpenClassrooms</span>
+            </div>
+        </div>
+    </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Section veille -->
+    <section id="veille">
+        <h2>Veille Informatique</h2>
+        <div class="stage-card">
+            <h3> Ma veille technologique et mes outils </h3>
+                    
+            <p class="stage-description">
+                Pour effectuer ma veille technologique, j’utilise « <B><a href="https://feedly.com/homepage"> Feedly </a></B>« , c'est un outil qui regroupe des articles de différents sites au même endroit. Elle permet de suivre ses sources d’information facilement.<BR> Celui-ci me permet d’être toujours au courant de toutes les actualités que je souhaite.<BR> J’ai ajouté sur celui-ci, différentes sources telles que : <B><a href="https://www.actuia.com/"> actuIA </a>, <a href="https://www.sciencedaily.com/"> Science Daily </a>, <a href="https://www.has-sante.fr/jcms"> HAS santé </a></B>…<BR>
+                Pour ma veille technologique j'ai choisi <B> L'IA dans le domaine Medical</B>.
+            </p>
+        </div>
+
+        <h2> <br>articles intéressant </h2>
+        <section class="articles">
+	
+            <article>
+                <div class="article-wrapper">
+                <figure>
+                    <img src="media/media-veille/ia_1.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>Quel est l’impact de l’IA sur le secteur de la santé ?</h2>
+                    <p>
+                        L'IA est utilisée pour analyser des images médicales comme les radiographies, IRM et échographies. Elle peut détecter des anomalies précoces, comme des signes de cancer, avec une précision impressionnante
+                    </p>
+                    <a href="https://www.harmonie-medical-service.fr/blog/post/impact-ia-secteur-sante" class="read-more">
+                    Read more <span class="sr-only">about this is some title</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-wrapper">
+                <figure>
+                    <img src="media/media-veille/ia-2.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>L’IA en santé, un enjeu majeur pour la HAS et l’ensemble du système de santé</h2>
+                    <p>
+                        Des algorithmes d'IA sont utilisés pour adapter les traitements en fonction des besoins spécifiques des patients, comme dans le cas de la gestion automatisée de l'insuline pour les diabétiques
+                    </p>
+                    <a href="https://www.has-sante.fr/jcms/p_3599637/fr/l-ia-en-sante-un-enjeu-majeur-pour-la-has-et-l-ensemble-du-systeme-de-sante" class="read-more">
+                    Read more <span class="sr-only">about this is some title</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-wrapper">
+                <figure>
+                    <img src="media/media-veille/ia-3.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>Intelligence artificielle et santé Des algorithmes au service de la médecine</h2>
+                    <p>
+                        Cet article explore les applications de l'intelligence artificielle (IA) dans le domaine médical, mettant en lumière son rôle dans le diagnostic, les traitements personnalisés et la robotique médicale. Il souligne également les défis éthiques et techniques liés à son utilisation, tout en insistant sur l'importance de l'accompagnement humain.
+                    </p>
+                    <a href="https://www.inserm.fr/dossier/intelligence-artificielle-et-sante/" class="read-more">
+                    Read more <span class="sr-only">about this is some title</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-wrapper">
+                <figure>
+                    <img src="media/media-veille/ia_4.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>Les Français et l’IA en santé : entre adhésion pragmatique et exigences de transparence</h2>
+                    <p>
+                        Cet article examine la perception des Français envers l'IA dans le domaine de la santé, mettant en évidence une adoption progressive mais inégale, ainsi que des attentes élevées en matière de transparence et de contrôle humain. Il explore également les opportunités et les défis liés à l'intégration de l'IA dans les soins médicaux.
+                    </p>
+                    <a href="https://www.actuia.com/actualite/les-francais-et-lia-en-sante-entre-adhesion-pragmatique-et-exigences-de-transparence/" class="read-more">
+                    Read more <span class="sr-only">about this is some title</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </article>
+            
+            
+            <article>
+
+                <div class="article-wrapper">
+                <figure>
+                    <img src="media/media-veille/ia_5.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>Les innovations de l’intelligence artificielle dans le milieu médical</h2>
+                    <p>
+                        Cet article met en lumière les avancées de l'intelligence artificielle dans le domaine médical, notamment dans le diagnostic, la chirurgie robotisée et la médecine personnalisée. Il explore également les bénéfices en gestion hospitalière et télémédecine, tout en soulignant les défis éthiques et techniques liés à son adoption.
+                    </p>
+                    <a href=https://www.abeilleinfo.com/les-innovations-de-lia-dans-le-milieu-medical/ class="read-more">
+                    Read more <span class="sr-only">about this is some title</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </article>
+
+            <article>
+
+                <div class="article-wrapper">
+                <figure>
+                    <img src="media/media-veille/ia_6.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>« Med-Gemini », la nouvelle IA médicale de Google surprend les médecins</h2>
+                    <p>
+                        Cet article présente Med-Gemini, une IA médicale révolutionnaire développée par Google, conçue pour améliorer la précision des diagnostics et des consultations médicales. Il met en avant ses capacités d'auto-apprentissage et ses mises à jour en temps réel, qui en font un outil puissant pour les professionnels de santé.
+                    </p>
+                    <a href=https://www.blog-nouvelles-technologies.fr/292401/google-med-gemini-ia/ class="read-more">
+                    Read more <span class="sr-only">about this is some title</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </article>
+
+        </section>
+
+    <!-- Section Stage -->
+    <section id="stage">
+        <h2 class="section-title">Stage</h2>
+        <div class="stage-grid">
+            <!-- Stage 1 -->
+            <div class="stage-card">
+                <h3>Stage Thales-Gennevillier</h3>
+                <p class="stage-date">Mai - Juin</p>
+                <p class="stage-description">
+                    J'ai effectué un stage de deux mois chez Thales à Gennevilliers, dans le service démonstration.
+                </p>
+                <ul class="stage-tasks">
+                    <li>Gestion des baies de brassage</li>
+                    <li>Formation</li>
+                    <li>Développement Python</li>
+                </ul>
+                <a href="Thales.html" class="project-link">
+                    Découvrir
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="stage-card">
+                <h3>Stage Tereos-Artenay</h3>
+                <p class="stage-date">Février - Mars</p>
+                <p class="stage-description">
+                    J’ai effectué un stage de deux mois chez Tereos Conditionnement, où j’ai assisté l’équipe de support technique dans la résolution des problèmes des utilisateurs.
+                </p>
+                <ul class="stage-tasks">
+                    <li>Participation à un projet MES</li>
+                    <li>Mise en place de Wallix Bastion</li>
+                    <li>Rédaction de documentation technique</li>
+                </ul>
+                <a href="Tereos.html" class="project-link">
+                    Découvrir
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Section Certif a ajouter -->
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <h2 >Projets Réalisés</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Projet MES</h3>
+                <a href="Projet-MES.html" class="project-link">Voir plus</a>
+            </div>
+            <div class="project-card">
+                <h3>Projet BEG</h3>
+                <a href="Projet-BEG.html" class="project-link">Voir plus</a>
+            </div>
+            <div class="project-card">
+                <h3>Projet IUTo</h3>
+                <a href="Projet-IUTo.html" class="project-link">Voir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">Contactez-moi</h2>
+                <p class="section-subtitle">Je suis à votre écoute pour répondre à vos questions et discuter de vos projets.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt icon-bounce"></i>
+                        <h3>Téléphone</h3>
+                        <p>+33 6 23 52 10 64</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope icon-float"></i>
+                        <h3>Email</h3>
+                        <p>engravellier@stpbb.org</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt icon-spin"></i>
+                        <h3>Adresse</h3>
+                        <p>Orléans, France</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="animated-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Nom complet</label>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Adresse email</label>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Votre message</label>
+                            <div class="underline"></div>
+                        </div>
+                        <button type="submit" class="project-link"><!--"submit-btn"-->
+                            Envoyer le message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Portfolio BTS SIO - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
