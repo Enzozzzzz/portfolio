@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS SIO - Présentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body data-theme="light">
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#options">Options</a></li>
+                <li><a href="#comparaison">Comparaison</a></li>
+                <li><a href="#admission">Admission</a></li>
+            </ul>
+            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+                <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                    <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                    </mask>
+                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                    <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="hero" class="parallax">
+        <div class="home-content">
+            <h1>BTS Services Informatiques aux Organisations</h1>
+            <p>Une formation technique en deux ans pour les métiers de l'informatique</p>
+        </div>
+    </section>
+
+    <!-- Présentation BTS SIO -->
+    <section id="presentation">
+        <h2 class="section-title">Présentation du BTS SIO</h2>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fas fa-laptop-code fa-3x"></i>
+                <h3>Objectif</h3>
+                <p>Former des professionnels capables de :</p>
+                <ul>
+                    <li>Maintenir et optimiser l'infrastructure IT</li>
+                    <li>Développer des solutions logicielles</li>
+                    <li>Assurer la sécurité des systèmes</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <i class="fas fa-chart-line fa-3x"></i>
+                <h3>Débouchés</h3>
+                <ul>
+                    <li>Administrateur réseau/système</li>
+                    <li>Développeur d'applications</li>
+                    <li>Technicien support</li>
+                    <li>Chef de projet IT</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Options -->
+    <section id="options">
+        <h2 class="section-title">Les deux options</h2>
+        <div class="options-grid">
+            <!-- Option SISR -->
+            <article class="option-card sisr">
+                <div class="option-header">
+                    <i class="fas fa-network-wired fa-4x"></i>
+                    <h3>SISR<br><span>(Solutions d'Infrastructure, Systèmes et Réseaux)</span></h3>
+                </div>
+                <div class="option-content">
+                    <h4>Compétences clés :</h4>
+                    <ul>
+                        <li>Administration des réseaux</li>
+                        <li>Sécurité informatique</li>
+                        <li>Virtualisation/Cloud</li>
+                        <li>Maintenance infrastructure</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Option SLAM -->
+            <article class="option-card slam">
+                <div class="option-header">
+                    <i class="fas fa-code fa-4x"></i>
+                    <h3>SLAM<br><span>(Solutions Logicielles et Applications Métiers)</span></h3>
+                </div>
+                <div class="option-content">
+                    <h4>Compétences clés :</h4>
+                    <ul>
+                        <li>Développement logiciel</li>
+                        <li>Base de données</li>
+                        <li>Cycles de vie des applications</li>
+                        <li>Interface utilisateur</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Tableau Comparatif -->
+    <section id="comparaison">
+        <h2 class="section-title">Comparaison des options</h2>
+        <div class="comparaison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>SISR</th>
+                        <th>SLAM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orientation</td>
+                        <td>Infrastructure & Réseaux</td>
+                        <td>Développement Logiciel</td>
+                    </tr>
+                    <tr>
+                        <td>Matières principales</td>
+                        <td>Routage, Sécurité, Virtualisation</td>
+                        <td>Programmation, Bases de données, UX</td>
+                    </tr>
+                    <tr>
+                        <td>Environnement technique</td>
+                        <td>Cisco, Windows Server, Linux</td>
+                        <td>Python, Java, SQL, .NET</td>
+                    </tr>
+                    <tr>
+                        <td>Débouchés</td>
+                        <td>Admin réseau, Technicien infra</td>
+                        <td>Développeur, Concepteur d'applications</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Admission -->
+    <section id="admission">
+        <h2 class="section-title">Conditions d'admission</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Prérequis</h3>
+                    <ul>
+                        <li>Bac général (spécialité NSI recommandée)</li>
+                        <li>Bac STI2D, Bac Pro SN</li>
+                        <li>Dossier scolaire + entretien</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Processus</h3>
+                    <ul>
+                        <li>Candidature sur Parcoursup</li>
+                        <li>Examen du dossier scolaire</li>
+                        <li>Entretien de motivation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BTS SIO - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
