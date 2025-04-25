@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS SIO - Présentation</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="script.js"></script>
 </head>
 <body data-theme="light">
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-content">
             <ul>
                 <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#options">Options</a></li>
-                <li><a href="#comparaison">Comparaison</a></li>
                 <li><a href="#admission">Admission</a></li>
             </ul>
             <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
@@ -39,149 +37,95 @@
         </div>
     </nav>
 
-    <!-- Section Hero -->
-    <section id="hero" class="parallax">
-        <div class="home-content">
+    <main class="container">
+        <section id="presentation">
             <h1>BTS Services Informatiques aux Organisations</h1>
-            <p>Une formation technique en deux ans pour les métiers de l'informatique</p>
-        </div>
-    </section>
-
-    <!-- Présentation BTS SIO -->
-    <section id="presentation">
-        <h2 class="section-title">Présentation du BTS SIO</h2>
-        <div class="cards-container">
-            <div class="card">
-                <i class="fas fa-laptop-code fa-3x"></i>
-                <h3>Objectif</h3>
-                <p>Former des professionnels capables de :</p>
-                <ul>
-                    <li>Maintenir et optimiser l'infrastructure IT</li>
-                    <li>Développer des solutions logicielles</li>
-                    <li>Assurer la sécurité des systèmes</li>
-                </ul>
-            </div>
+            <div class="divider"></div>
             
-            <div class="card">
-                <i class="fas fa-chart-line fa-3x"></i>
-                <h3>Débouchés</h3>
-                <ul>
-                    <li>Administrateur réseau/système</li>
-                    <li>Développeur d'applications</li>
-                    <li>Technicien support</li>
-                    <li>Chef de projet IT</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Options -->
-    <section id="options">
-        <h2 class="section-title">Les deux options</h2>
-        <div class="options-grid">
-            <!-- Option SISR -->
-            <article class="option-card sisr">
-                <div class="option-header">
-                    <i class="fas fa-network-wired fa-4x"></i>
-                    <h3>SISR<br><span>(Solutions d'Infrastructure, Systèmes et Réseaux)</span></h3>
+            <div class="grid-2">
+                <div>
+                    <h2>Formation en informatique</h2>
+                    <p>Diplôme d'État de niveau 5 (BAC+2) préparant aux métiers de :</p>
+                    <ul class="clean-list">
+                        <li>Administration système et réseau</li>
+                        <li>Développement logiciel</li>
+                        <li>Cybersécurité</li>
+                        <li>Support technique</li>
+                    </ul>
                 </div>
-                <div class="option-content">
-                    <h4>Compétences clés :</h4>
+                
+                <div>
+                    <h2>Structure du cursus</h2>
+                    <ul class="clean-list">
+                        <li>1 400 heures de formation sur 2 ans</li>
+                        <li>12 à 14 semaines de stage</li>
+                        <li>Projets professionnels</li>
+                        <li>Examen final écrit/oral</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="options">
+            <h2>Options de spécialisation</h2>
+            <div class="divider"></div>
+            
+            <div class="option-cards">
+                <article class="option-card sisr">
+                    <h3><i class="fas fa-server"></i> SISR</h3>
+                    <p class="subtitle">Solutions d'Infrastructure, Systèmes et Réseaux</p>
                     <ul>
-                        <li>Administration des réseaux</li>
+                        <li>Configuration réseau</li>
+                        <li>Virtualisation</li>
                         <li>Sécurité informatique</li>
-                        <li>Virtualisation/Cloud</li>
                         <li>Maintenance infrastructure</li>
                     </ul>
-                </div>
-            </article>
+                </article>
 
-            <!-- Option SLAM -->
-            <article class="option-card slam">
-                <div class="option-header">
-                    <i class="fas fa-code fa-4x"></i>
-                    <h3>SLAM<br><span>(Solutions Logicielles et Applications Métiers)</span></h3>
-                </div>
-                <div class="option-content">
-                    <h4>Compétences clés :</h4>
+                <article class="option-card slam">
+                    <h3><i class="fas fa-code"></i> SLAM</h3>
+                    <p class="subtitle">Solutions Logicielles et Applications Métiers</p>
                     <ul>
-                        <li>Développement logiciel</li>
-                        <li>Base de données</li>
-                        <li>Cycles de vie des applications</li>
-                        <li>Interface utilisateur</li>
+                        <li>Développement d'applications</li>
+                        <li>Gestion de bases de données</li>
+                        <li>Conception UX/UI</li>
+                        <li>Maintenance logicielle</li>
                     </ul>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Tableau Comparatif -->
-    <section id="comparaison">
-        <h2 class="section-title">Comparaison des options</h2>
-        <div class="comparaison-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Critère</th>
-                        <th>SISR</th>
-                        <th>SLAM</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Orientation</td>
-                        <td>Infrastructure & Réseaux</td>
-                        <td>Développement Logiciel</td>
-                    </tr>
-                    <tr>
-                        <td>Matières principales</td>
-                        <td>Routage, Sécurité, Virtualisation</td>
-                        <td>Programmation, Bases de données, UX</td>
-                    </tr>
-                    <tr>
-                        <td>Environnement technique</td>
-                        <td>Cisco, Windows Server, Linux</td>
-                        <td>Python, Java, SQL, .NET</td>
-                    </tr>
-                    <tr>
-                        <td>Débouchés</td>
-                        <td>Admin réseau, Technicien infra</td>
-                        <td>Développeur, Concepteur d'applications</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Admission -->
-    <section id="admission">
-        <h2 class="section-title">Conditions d'admission</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Prérequis</h3>
-                    <ul>
-                        <li>Bac général (spécialité NSI recommandée)</li>
-                        <li>Bac STI2D, Bac Pro SN</li>
-                        <li>Dossier scolaire + entretien</li>
-                    </ul>
-                </div>
+                </article>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Processus</h3>
+        </section>
+
+        <section id="admission">
+            <h2>Conditions d'admission</h2>
+            <div class="divider"></div>
+            
+            <div class="grid-2">
+                <div>
+                    <h3>Profil requis</h3>
                     <ul>
+                        <li>BAC général (NSI recommandé)</li>
+                        <li>BAC technologique STI2D</li>
+                        <li>BAC professionnel SN/SI</li>
+                        <li>DAEU B</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Procédure</h3>
+                    <ol>
                         <li>Candidature sur Parcoursup</li>
                         <li>Examen du dossier scolaire</li>
                         <li>Entretien de motivation</li>
-                    </ul>
+                        <li>Réponse définitive</li>
+                    </ol>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 BTS SIO - Tous droits réservés</p>
+        <p>Diplôme d'État - Ministère de l'Éducation Nationale</p>
+        <p>Niveau 5 RNCP - Code NSF 326t</p>
     </footer>
 </body>
 </html>
