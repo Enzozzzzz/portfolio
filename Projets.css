@@ -332,11 +332,9 @@
 }
 
 .doc-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);     
-    gap: 20px;
-    padding: 20px 0;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes au lieu de auto-fill */
 }
+
 
 @media (max-width: 768px) {
     .doc-grid {
@@ -363,17 +361,10 @@
 }
 
 .doc-preview::after {
-    content: attr(data-filetype); 
+    content: attr(data-filetype); /* Utilisation de l'attribut data */
     text-transform: uppercase;
     font-size: 1em;
     opacity: 0.5;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--color-11);
-    opacity: 0.3;
-    font-size: 1.2em;
 }
 
 .doc-info {
