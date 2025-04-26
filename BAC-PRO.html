@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS SIO - Présentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bts.css">
+    <link rel="stylesheet" href="bac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="media/flavico.png" type="image/x-icon">
+</head>
+<body data-theme="light">
+    <nav id="navbar">
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html#home">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#options">Options</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <!-- Bouton pour basculer entre le mode clair et le mode sombre -->
+            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+                <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                    <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                    </mask>
+                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                    <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="presentation">
+            <h1>Baccalauréat Professionnel Système Numérique</h1>
+            <div class="divider"></div>
+            
+            <div class="grid-2">
+                <div>
+                    <h2>Objectifs de la formation</h2>
+                    <ul class="clean-list">
+                        <li>Installation de systèmes numériques</li>
+                        <li>Maintenance préventive et corrective</li>
+                        <li>Configuration réseau basique</li>
+                        <li>Gestion de la relation client</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Compétences clés</h2>
+                    <ul class="clean-list">
+                        <li>Électronique numérique</li>
+                        <li>Programmation embarquée</li>
+                        <li>Sécurité des installations</li>
+                        <li>Communication technique</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="options">
+            <h2>Options disponibles</h2>
+            <div class="divider"></div>
+            
+            <div class="option-cards">
+                <article class="option-card">
+                    <h3><i class="fas fa-network-wired"></i> RISC</h3>
+                    <p class="subtitle">Réseaux Informatiques et Systèmes Communicants</p>
+                    <ul>
+                        <li>Installation réseaux cuivre/optique</li>
+                        <li>Configuration d'équipements actifs</li>
+                        <li>Maintenance systèmes communicants</li>
+                        <li>Sécurité des accès réseau</li>
+                    </ul>
+                </article>
+
+                <article class="option-card">
+                    <h3><i class="fas fa-shield-alt"></i> SSITH</h3>
+                    <p class="subtitle">Sûreté et Sécurité des Infrastructures</p>
+                    <ul>
+                        <li>Installation systèmes d'alarme</li>
+                        <li>Contrôle d'accès physique</li>
+                        <li>Vidéosurveillance IP</li>
+                        <li>Gestion des risques</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="poursuite">
+            <h2>Poursuite d'études</h2>
+            <div class="divider"></div>
+            
+            <div class="grid-2">
+                <div>
+                    <h3>Formations immédiates</h3>
+                    <ul>
+                        <li>BTS SIO (Services Informatiques)</li>
+                        <li>BTS SN (Systèmes Numériques)</li>
+                        <li>MC Maintenance systèmes</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Perspectives long terme</h3>
+                    <ul>
+                        <li>Licence pro réseaux</li>
+                        <li>BUT Informatique</li>
+                        <li>Certifications professionnelles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diplôme d'État - Ministère de l'Éducation Nationale</p>
+        <p>Niveau 4 RNCP - Domaine Informatique/Réseaux</p>
+    </footer>
+</body>
+</html>
