@@ -332,131 +332,46 @@
 }
 
 .doc-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
-    justify-content: space-between;
-}
-
-doc-columns-container {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.doc-column {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-}
-
-.doc-category-title {
-    font-size: 1.2rem;
-    color: var(--color-9);
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--color-6);
-}
-
-
-@media (max-width: 768px) {
-    .doc-grid {
-        grid-template-columns: 1fr;
-    }
+    padding: 20px 0;
 }
 
 .doc-card {
-    margin-bottom: 20px;
-    background: var(--color-3);
-    border-radius: 10px;
-    border: 1px solid var(--color-6);
+    background: var(--color-2);
+    border-radius: 12px;
+    overflow: hidden;
     transition: transform 0.3s ease;
+    display: flex;
 }
 
 .doc-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.doc-link {
-    display: flex;
-    padding: 15px;
-    text-decoration: none;
+    transform: translateY(-5px);
 }
 
 .doc-preview {
-    width: 80px;
-    height: 80px;
-    min-width: 80px;
+    width: 100px;
     background: var(--color-4);
-    border-radius: 8px;
-    margin-right: 15px;
     position: relative;
 }
 
 .doc-preview::after {
-    content: attr(data-filetype);
+    content: "PDF";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--color-11);
-    opacity: 0.8;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
+    opacity: 0.3;
+    font-size: 1.2em;
 }
 
 .doc-info {
     padding: 15px;
-    flex-grow: 1;
+    flex: 1;
 }
 
-.file-type {
-    background: var(--color-4);
-    padding: 3px 8px;
-    border-radius: 5px;
-}
-
-
-/* Affichage dynamique des types de fichiers */
-a[href$=".pdf"] .doc-preview::after { content: "PDF"; }
-a[href$=".pptx"] .doc-preview::after { content: "PPTX"; }
-a[href$=".xlsx"] .doc-preview::after { content: "XLSX"; }
-a[href$=".pkt"] .doc-preview::after { content: "PKT"; }
-a[href$=".vsdx"] .doc-preview::after { content: "VSDX"; }
-
-@media (max-width: 1200px) {
-    .doc-columns-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .doc-column {
-        flex: 1 1 45%;
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 768px) {
-    .doc-column {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-    
-    .doc-link {
-        flex-direction: column;
-    }
-    
-    .doc-preview {
-        width: 100%;
-        height: 100px;
-        margin-bottom: 15px;
-    }
-}
 .doc-meta {
     display: flex;
     justify-content: space-between;
