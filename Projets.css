@@ -332,7 +332,10 @@
 }
 
 .doc-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes au lieu de auto-fill */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 
@@ -343,11 +346,14 @@
 }
 
 .doc-card {
-    background: var(--color-2);
+    width: calc(33% - 15px);
+    background: var(--color-3);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease;
     display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-6);
 }
 
 .doc-card:hover {
@@ -355,21 +361,42 @@
 }
 
 .doc-preview {
-    width: 100px;
+    height: 120px;
     background: var(--color-4);
     position: relative;
+    border-bottom: 1px solid var(--color-6);
 }
 
 .doc-preview::after {
-    content: attr(data-filetype); /* Utilisation de l'attribut data */
-    text-transform: uppercase;
-    font-size: 1em;
+    content: attr(data-filetype);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-11);
     opacity: 0.5;
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
 
 .doc-info {
     padding: 15px;
-    flex: 1;
+    flex-grow: 1;
+}
+
+/* Affichage dynamique des types de fichiers */
+a[href$=".pdf"] .doc-preview::after { content: "PDF"; }
+a[href$=".pptx"] .doc-preview::after { content: "PPTX"; }
+a[href$=".xlsx"] .doc-preview::after { content: "XLSX"; }
+a[href$=".pkt"] .doc-preview::after { content: "PKT"; }
+a[href$=".vsdx"] .doc-preview::after { content: "VSDX"; }
+
+@media (max-width: 992px) {
+    .doc-card { width: calc(50% - 10px); }
+}
+
+@media (max-width: 576px) {
+    .doc-card { width: 100%; }
 }
 
 .doc-meta {
