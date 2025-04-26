@@ -357,7 +357,7 @@
 }
 
 .doc-preview::after {
-    content: "PDF";
+    content: attr(data-filetype);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -366,6 +366,14 @@
     opacity: 0.3;
     font-size: 1.2em;
 }
+
+
+
+a[href$=".pdf"] .doc-preview::after { content: "PDF"; }
+a[href$=".pptx"] .doc-preview::after { content: "PPTX"; }
+a[href$=".xlsx"] .doc-preview::after { content: "XLSX"; }
+a[href$=".pkt"] .doc-preview::after { content: "PKT"; }
+a[href$=".vsdx"] .doc-preview::after { content: "VSDX"; }
 
 .doc-info {
     padding: 15px;
