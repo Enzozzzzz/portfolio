@@ -30,6 +30,41 @@ function checkSavedTheme() {
 document.addEventListener('DOMContentLoaded', checkSavedTheme);
 
 
+// Gestion du formulaire de contact
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const formData = new FormData(form);
+    const status = document.getElementById('form-status');
+    
+    status.textContent = 'Envoi en cours...';
+    status.style.color = 'var(--color-12)';
+    
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            status.textContent = 'Message envoyé avec succès !';
+            status.style.color = 'var(--color-9)';
+            form.reset();
+        } else {
+            throw new Error('Erreur lors de l\'envoi');
+        }
+    })
+    .catch(error => {
+        status.textContent = 'Une erreur est survenue. Veuillez réessayer.';
+        status.style.color = 'var(--color-10)';
+        console.error('Error:', error);
+    });
+});
+
+
 
 // Effet de défilement fluide pour le lien "scroll-down"
 document.querySelector('.scroll-down').addEventListener('click', function (e) {
