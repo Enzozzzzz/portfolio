@@ -431,8 +431,7 @@ a[href$=".vsdx"] .doc-preview::after { content: "VSDX"; }
     font-size: 0.9em;
 }
 
-/* Dans Projets.css */
-/* Ajouter ces styles */
+
 
 .tech-challenge .challenge-card {
     opacity: 0;
@@ -515,7 +514,7 @@ a[href$=".vsdx"] .doc-preview::after { content: "VSDX"; }
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/* Dans Projets.css */
+
 .hover-indicator {
     position: absolute;
     bottom: 10px;

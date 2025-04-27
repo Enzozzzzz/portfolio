@@ -714,7 +714,7 @@ figure {
     transition: all 0.3s;
   }
   
-  /* using the has() relational pseudo selector to update our custom properties */
+  
   article:has(:hover, :focus) {
     --img-scale: 1.1;
     --link-icon-translate: 0;
@@ -976,8 +976,8 @@ figure {
 .project-card h3 {
     margin-bottom: 10px;
     color: var(--color-12);
-    position: relative; /* Ajouté */
-    z-index: 1; /* Ajouté pour le placer au-dessus de l'overlay */
+    position: relative; 
+    z-index: 1; 
 }
 
 /* Styles pour les liens "Voir plus" des projets */

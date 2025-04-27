@@ -1,4 +1,4 @@
-/* Correction de la navbar */
+
 #navbar {
     position: fixed;
     top: 0;
@@ -8,7 +8,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Correction de l'empilement des sections */
+
 section {
     margin: 4rem 0;
     padding: 2rem;
@@ -17,7 +17,7 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Amélioration de la hiérarchie visuelle */
+
 h1, h2, h3 {
     color: var(--color-12);
     margin-bottom: 1.5rem;
