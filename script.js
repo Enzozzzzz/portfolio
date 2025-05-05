@@ -29,7 +29,6 @@ function checkSavedTheme() {
 
 document.addEventListener('DOMContentLoaded', checkSavedTheme);
 
-
 // Gestion du formulaire de contact
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
