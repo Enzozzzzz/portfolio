@@ -548,6 +548,49 @@ a[href$=".vsdx"] .doc-preview::after { content: "VSDX"; }
     transform: translateX(2px);
 }
 
+/* Ajout des styles pour les objectifs déroulants */
+.objectifs-container {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.objectif-item {
+    background: var(--color-2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-6);
+}
+
+.objectif-item[open] {
+    background: var(--color-3);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.objectif-title {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.objectif-title::after {
+    content: "+";
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.objectif-item[open] .objectif-title::after {
+    content: "-";
+}
+
+.objectif-content {
+    padding: 0 15px 15px 15px;
+    color: var(--color-11);
+}
+
 /* Sur mobile */
 @media (hover: none) {
     .hover-indicator {

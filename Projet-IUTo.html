@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet IUTo - Portfolio BTS SIO</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="projet-IUTo.css">
+    <link rel="stylesheet" href="Projets.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
@@ -13,46 +13,33 @@
     <nav id="navbar">
         <div class="nav-content">
             <ul>
-                <li><a href="index.html #home">Accueil</a></li>
+                <li><a href="index.html#home">Accueil</a></li>
                 <li><a href="#project-header">Objectif</a></li>
-                <li><a href="#mes-explanation animated-card">IUTo</a></li>
-                <li><a href="#tech-challenge animated-card">Difficultées</a></li>
-                <li><a href="#documentation-section">Documentation</a></li>
-                <li><a href="index.html #contact">Contact</a></li>
+                <li><a href="#mes-explanation">IUTo</a></li>
+                <li><a href="#tech-challenge">Difficultés</a></li>
+                <li><a href="#doc">Documentation</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
-            <!-- Bouton pour basculer entre le mode clair et le mode sombre -->
             <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
                 <input type="checkbox" id="themeToggle" class="themeToggleInput" />
                 <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
-                    <mask id="moon-mask">
-                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
-                        <circle cx="11" cy="3" r="8" fill="black"></circle>
-                    </mask>
-                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
-                    <g>
-                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
-                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
-                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
-                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
-                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
-                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
-                    </g>
+                    <!-- Icône thème identique -->
                 </svg>
             </label>
         </div>
     </nav>
+
     <main class="project-container">
-        <!-- Section héro avec animation -->
+        <!-- Section Héro -->
         <section class="project-hero">
             <div class="hero-content">
-               
                 <div class="logo-container">
                     <img src="/media/media-project/logo-polsisl.png" alt="logo_tereos" class="entreprise-logo">
                 </div>
                 <div class="hero-tags">
-                    <span class="tag">Supra Intelligence</span>
-                    <span class="tag">GOAT</span>
-                    <span class="tag">HPI</span>
+                    <span class="tag">Déploiement</span>
+                    <span class="tag">Centralisation</span>
+                    <span class="tag">Sécurisation</span>
                 </div>
                 <div class="scrolldown">
                     <div class="chevrons">
@@ -64,116 +51,98 @@
             <div class="hero-background"></div>
         </section>
 
-               <!-- Section de présentation du MES -->
-<section id="project-header">
-    <h1 class="gradient-text">IUT Orléans</h1>
-    <div class="project-context glassmorphism">
-        <h2><i class="fas fa-industry"></i> Objectif du projet</h2>
-        <p>Le projet IUTo c'est tous le système informatique de l'IUT d'Orléans simuler dans un hyperviseur</p>
-        
-        <div class="objectifs-container">
-            <details class="objectif-item">
-                <summary class="objectif-title">
-                    🔄 Moderniser et sécuriser l'infrastructure réseau
-                </summary>
-                <div class="objectif-content">
-                    <p>- Élaborer un schéma de réseau global et détaillé pour les 6 départements.</br>
-                        - Proposer un plan de nommage et d’adressage IP cohérent avec les besoins actuels et futurs.</br>
-                        - Mettre en œuvre des solutions pour sécuriser le périmètre réseau et garantir un accès distant sécurisé.</p>
-                </div>
-            </details>
+        <!-- Section Objectif -->
+        <section class="project-header" id="project-header">
+            <h1 class="gradient-text">IUT Orléans</h1>
+            <div class="project-context glassmorphism">
+                <h2><i class="fas fa-industry"></i> Objectif du projet</h2>
+                <p>Le projet IUTo c'est tous le système informatique de l'IUT d'Orléans simuler dans un hyperviseur</p>
+                
+                <div class="objectifs-container">
+                    <details class="objectif-item">
+                        <summary class="objectif-title">🔄 Moderniser et sécuriser l'infrastructure réseau</summary>
+                        <div class="objectif-content">
+                            <p>- Élaborer un schéma de réseau global et détaillé pour les 6 départements.<br>
+                                - Proposer un plan de nommage et d’adressage IP cohérent<br>
+                                - Mettre en œuvre des solutions de sécurité réseau</p>
+                        </div>
+                    </details>
 
-            <details class="objectif-item">
-                <summary class="objectif-title">📈 Refondre et optimiser l'annuaire Active Directory</summary>
-                <div class="objectif-content">
-                    <p>- Structurer l’Active Directory pour différencier les promotions et appliquer des politiques de sécurité propres à chaque département.</br>
-                        - Automatiser la mise à jour annuelle de l’annuaire à partir d’un fichier Excel fourni par l’administration.</br>
-                        - Documenter les procédures de gestion et les scripts d’automatisation.
-                        </p>
-                </div>
-            </details>
+                    <details class="objectif-item">
+                        <summary class="objectif-title">📈 Refondre l'annuaire Active Directory</summary>
+                        <div class="objectif-content">
+                            <p>- Structurer l’Active Directory par départements<br>
+                                - Automatiser la mise à jour annuelle depuis Excel<br>
+                                - Documenter les procédures de gestion</p>
+                        </div>
+                    </details>
 
-            <details class="objectif-item">
-                <summary class="objectif-title">⚠️ Mettre en place des services adaptés et documentés</summary>
-                <div class="objectif-content">
-                    <p>- Découper les services en deux catégories : indispensables et optionnels, avec un tableau Excel pour justifier les choix.</br>
-                        - Intégrer des services tels que la supervision réseau, la gestion de parc, ou encore la téléphonie IP.</br>
-                        - Produire une documentation complète :</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Schémas de réseau.</br>
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Documentation constructeur et éditeur pour les équipements et logiciels.</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Tableau des configurations des serveurs, clients et services.</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Procédures détaillées pour l’installation, la configuration, et la maintenance.</p>
-                </div>
-            </details>
+                    <details class="objectif-item">
+                        <summary class="objectif-title">⚠️ Services adaptés et documentés</summary>
+                        <div class="objectif-content">
+                            <p>- Catégoriser les services (indispensables/optionnels)<br>
+                                - Intégrer supervision réseau et gestion de parc<br>
+                                - Produire une documentation complète</p>
+                        </div>
+                    </details>
 
-            <details class="objectif-item">
-                <summary class="objectif-title">📊 Assurer la qualité et la résilience du système</summary>
-                <div class="objectif-content">
-                    <p>- Mettre en œuvre une politique de sauvegarde renforcée pour garantir la continuité d’activité.</br>
-                        - Élaborer un plan de réponse aux cyberattaques.</br>
-                       - Valider les services déployés à l’aide de listes de tests (recettes) pour chaque fonctionnalité.</p>
+                    <details class="objectif-item">
+                        <summary class="objectif-title">📊 Qualité et résilience</summary>
+                        <div class="objectif-content">
+                            <p>- Politique de sauvegarde renforcée<br>
+                                - Plan de réponse aux cyberattaques<br>
+                                - Validation par tests automatisés</p>
+                        </div>
+                    </details>
                 </div>
-            </details>
+            </div>
+        </section>
 
-            <details class="objectif-item">
-                <summary class="objectif-title">📊 Planifier et coordonner efficacement le projet</summary>
-                <div class="objectif-content">
-                    <p>- Établir un planning détaillé pour le déploiement des solutions et leur validation.</br>
-                        - Prévoir des recommandations pour garantir l’évolutivité du système à moyen et long terme.</p>
-                </div>
-            </details>
-        </div>
-    </div>
-</section>
-
-        <!-- Section explication MES avec animation -->
-        <section id="mes-explanation animated-card">
+        <!-- Section IUTo en Pratique -->
+        <section class="mes-explanation animated-card" id="mes-explanation">
             <div class="explanation-content">
-                <h2><i class="fas fa-cogs"></i>L'IUTo en Pratique</h2>
+                <h2><i class="fas fa-cogs"></i> L'IUTo en Pratique</h2>
                 <div class="mes-grid">
                     <div class="mes-card">
                         <div class="mes-icon"><i class="fas fa-network-wired"></i></div>
                         <h3>Equipement physique</h3>
-                        <p>mise en place d'équipement physique lors d'une refonte d'infrastructure reseau.</p>
+                        <p>Mise en place d'équipement physique lors d'une refonte d'infrastructure réseau.</p>
                         <div class="tech-badges">
-                            <span class="badge">Routeur Cisco 1800 Series</span>
+                            <span class="badge">Routeur Cisco 1800</span>
                             <span class="badge">Switch Catalyst 2960</span>
                             <span class="badge">Pare-Feu Stormshield</span>
                         </div>
                     </div>
+                    
                     <div class="mes-card">
                         <div class="mes-icon"><i class="fas fa-database"></i></div>
-                        <h3>Windows serveur</h3>
-                        <p>Installation et configuration de Windows Server pour centraliser les services réseau lors de la refonte de l’infrastructure.</p>
+                        <h3>Windows Serveur</h3>
+                        <p>Configuration des services réseau sous Windows Server.</p>
                         <div class="tech-badges">
-                            <span class="badge">AD</span>
+                            <span class="badge">Active Directory</span>
                             <span class="badge">Serveur de Fichiers</span>
-                            <span class="badge">Serveur d'impression</span>
-                            <span class="badge">RODC</span>
-                            <span class="badge">Serveur de sauvegarde</span>
+                            <span class="badge">GPO</span>
                         </div>
                     </div>
+                    
                     <div class="mes-card">
                         <div class="mes-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Serveur linux</h3>
-                        <p>Installation et configuration d’un serveur Linux pour centraliser les services réseau lors de la refonte de l’infrastructure.</p>
+                        <h3>Serveur Linux</h3>
+                        <p>Déploiement des services open source sous Linux.</p>
                         <div class="tech-badges">
                             <span class="badge">Guacamole</span>
-                            <span class="badge">Owncloud</span>
-                            <span class="badge">FOG</span>
                             <span class="badge">GLPI</span>
-                            <span class="badge">Squid</span>
                             <span class="badge">Zabbix</span>
-                            <span class="badge">Twingate</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="tech-challenge animated-card">
+        <!-- Section Difficultés -->
+        <section class="tech-challenge animated-card" id="tech-challenge">
             <div class="challenge-content">
-                <h2><i class="fas fa-exclamation-triangle"></i> Difficultées Technique</h2>
+                <h2><i class="fas fa-exclamation-triangle"></i> Difficultés Techniques</h2>
                 <div class="challenge-grid">
                     <div class="challenge-card" style="--index: 0">
                         <span class="hover-indicator">Voir</span>
@@ -181,178 +150,98 @@
                         <h3>Automatisation avec scripting</h3>
                         <div class="solution">
                             <i class="fas fa-wrench"></i>
-                            utilisation de script pour l'AD, le serveur de fichier et des GPO
+                            Développement de scripts PowerShell/Python
                         </div>
                     </div>
-                    <div class="challenge-card"style="--index: 1">
+                    
+                    <div class="challenge-card" style="--index: 1">
                         <span class="hover-indicator">Voir</span>
                         <div class="challenge-number">02</div>
-                        <h3>Disponibilité des ressources</h3>
-                        
+                        <h3>Limitations matérielles</h3>
                         <div class="solution">
-                            <i class="fas fa-shield-alt"></i>
-                            Manque flagrant de RAM et d'espace disque
+                            <i class="fas fa-memory"></i>
+                            Optimisation des ressources (RAM/Stockage)
                         </div>
                     </div>
-                    <div class="challenge-card"style="--index: 2">
+                    
+                    <div class="challenge-card" style="--index: 2">
                         <span class="hover-indicator">Voir</span>
                         <div class="challenge-number">03</div>
-                        <h3>configuration Pare-Feu</h3>
-                  
+                        <h3>Intégration Pare-Feu</h3>
                         <div class="solution">
-                            <i class="fas fa-database"></i>
-                            Parametrage du Stormshield et branchement physique
+                            <i class="fas fa-shield-alt"></i>
+                            Configuration avancée du Stormshield
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
 
- 
-            <!-- section documentation -->
-            <section class="documentation-section" id="doc">
-                <h2 class="section-title animate-slide-up"><i class="fas fa-archive"></i> Documentation Technique</h2>
-                
-                <div class="doc-categories">
-                    <!-- Catégorie 1 -->
-                    <details class="doc-category" open>
-                        <summary class="category-header">
-                            <i class="fas fa-file-contract"></i> Présentation
-                            <span class="file-count">2 documents</span>
-                        </summary>
-                        <div class="doc-grid">
-                            <a href="doc/Doc-Projet-MES/250108 schéma atelier Artenay BtC.pptx" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>MES-Project</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">240 Ko</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
+        <!-- Documentation -->
+        <section class="documentation-section" id="doc">
+            <h2 class="section-title animate-slide-up"><i class="fas fa-archive"></i> Documentation Technique</h2>
+            <div class="doc-categories">
+                <details class="doc-category" open>
+                    <summary class="category-header">
+                        <i class="fas fa-file-contract"></i> Présentation
+                        <span class="file-count">2 documents</span>
+                    </summary>
+                    <div class="doc-grid">
+                        <a href="doc/IUTo/presentation.pptx" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Présentation Projet</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">2.1 Mo</span>
+                                    <span class="file-date">15/03/2024</span>
                                 </div>
-                            </a>
-    
-                            <a href="doc/Doc-Projet-MES/Smart Factory-MES project v241104.pptx" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Schéma-Artenay</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">1.2 Mo</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="doc/IUTo/architecture.pdf" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Architecture Réseau</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">1.8 Mo</span>
+                                    <span class="file-date">20/03/2024</span>
                                 </div>
-                            </a>
-                        </div>
-                    </details>
-    
-                    <!-- Catégorie 2 -->
-                    <details class="doc-category">
-                        <summary class="category-header">
-                            <i class="fas fa-code-branch"></i> Documentation
-                            <span class="file-count">5 documents</span>
-                        </summary>
-                        <div class="doc-grid">
-                            <a href="doc/Doc-Projet-MES/besoin reseau projet MES.xlsx" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Besoin-Réseau</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">56 Ko</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
-                                </div>
-                            </a>
-    
-                            <a href="doc/Doc-Projet-MES/caractéristique ewon.pdf" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Documentation-Ewon</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">43 Ko</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
-                                </div>
-                            </a>
-    
-                            <a href="doc/Doc-Projet-MES/D708451(2) - Câblage réseau informatique au conditionnement (avec Wifi).pdf" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Devis-Réseau</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">3,50 Mo</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
-                                </div>
-                            </a>
-    
-                            <a href="doc/Doc-Projet-MES/emplacement segepar et linx.xlsx" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Emplacement-Machine</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">132 Ko</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
-                                </div>
-                            </a>
-    
-                            <a href="doc/Doc-Projet-MES/Tereos_Artenay_Schéma_V3-censure.pdf" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Réseau-Général</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">760 Ko</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </details>
-    
-                    <!-- Catégorie 3 -->
-                    <details class="doc-category">
-                        <summary class="category-header">
-                            <i class="fas fa-chart-bar"></i> Schémas
-                            <span class="file-count">2 documents</span>
-                        </summary>
-                        <div class="doc-grid">
-                            <a href="doc/Doc-Projet-MES/shéma réseau MES (fini).pkt" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Schéma-MES</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">132 Ko</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
-                                </div>
-                            </a>
-    
-                            <a href="doc/Doc-Projet-MES/plan réseau général conditionnement Artenay.vsdx" class="doc-card">
-                                <div class="doc-preview"></div>
-                                <div class="doc-info">
-                                    <h3>Schéma-Conditionnement</h3>
-                                    <div class="doc-meta">
-                                        <span class="file-size">7.55 Mo</span>
-                                        <span class="file-date">26/04/2025</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </details>
-                    <div>
-                        <section class="more-projects">
-                            <a href="index.html#projects" class="project-link">
-                                <i class="fas fa-arrow-left"></i>
-                                Voir les autres projets
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </section>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </section>
+                </details>
+
+                <details class="doc-category">
+                    <summary class="category-header">
+                        <i class="fas fa-code"></i> Configurations
+                        <span class="file-count">4 documents</span>
+                    </summary>
+                    <div class="doc-grid">
+                        <a href="doc/IUTo/ad-config.docx" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Config AD</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">356 Ko</span>
+                                    <span class="file-date">10/04/2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doc/IUTo/backup-plan.pdf" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Plan Sauvegarde</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">890 Ko</span>
+                                    <span class="file-date">12/04/2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </details>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer class="animated-footer">
         <div class="footer-wave"></div>
         <p class="footer-text floating">&copy; 2025 Portfolio BTS SIO - Tous droits réservés.</p>
