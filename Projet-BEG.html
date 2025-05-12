@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - BTS SIO SISR</title>
+    <title>Projet BEG - Portfolio BTS SIO</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Projets.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
-<body>
-    <!-- Barre de navigation -->
+<body class="body-project">
     <nav id="navbar">
         <div class="nav-content">
             <ul>
-                <li><a href="index.html #home">Accueil</a></li>
-                <li><a href="index.html #about">Présentation</a></li>
-                <li><a href="index.html #skills">Compétences</a></li>
-                <li><a href="inndex.html #projects">Projets</a></li>
-                <li><a href="index.html #contact">Contact</a></li>
+                <li><a href="index.html#home">Accueil</a></li>
+                <li><a href="#project-header">Objectif</a></li>
+                <li><a href="#mes-explanation">Solution</a></li>
+                <li><a href="#tech-challenge">Défis</a></li>
+                <li><a href="#doc">Documentation</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
-            <!-- Bouton pour basculer entre le mode clair et le mode sombre -->
-            <!-- Supprimer l'ancien bouton et garder seulement ceci -->
-            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+             <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
                 <input type="checkbox" id="themeToggle" class="themeToggleInput" />
                 <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
                     <mask id="moon-mask">
                         <rect x="0" y="0" width="20" height="20" fill="white"></rect>
                         <circle cx="11" cy="3" r="8" fill="black"></circle>
                     </mask>
-                    <circle
-                        class="sunMoon"
-                        cx="10"
-                        cy="10"
-                        r="8"
-                        mask="url(#moon-mask)"
-                    ></circle>
+                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
                     <g>
                         <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
                         <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
@@ -48,5 +40,204 @@
             </label>
         </div>
     </nav>
+
+    <main class="project-container">
+        <!-- Section Héro -->
+        <section class="project-hero">
+            <div class="hero-content">
+                <div class="logo-container">
+                    <img src="/media/media-project/logo-beg.png" alt="logo_BEG" class="entreprise-logo">
+                </div>
+                <div class="hero-tags">
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">Sécurité Réseau</span>
+                    <span class="tag">Stormshield</span>
+                </div>
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Section Objectif -->
+        <section class="project-header" id="project-header">
+            <h1 class="gradient-text">BEG Architecture</h1>
+            <div class="project-context glassmorphism">
+                <h2><i class="fas fa-industry"></i> Mission du projet</h2>
+                <p>Refonte du système d'information suite à un changement de prestataire et déménagement</p>
+                
+                <div class="objectifs-container">
+                    <details class="objectif-item">
+                        <summary class="objectif-title">🛡️ Sécurisation de l'infrastructure</summary>
+                        <div class="objectif-content">
+                            <p>- Implémentation d'un pare-feu Stormshield<br>
+                               - Audit de sécurité réseau complet<br>
+                               - Plan de continuité d'activité (PCA)</p>
+                        </div>
+                    </details>
+
+                    <details class="objectif-item">
+                        <summary class="objectif-title">📂 Gestion centralisée</summary>
+                        <div class="objectif-content">
+                            <p>- Migration vers Active Directory<br>
+                               - Mise en place de profils itinérants<br>
+                               - Redirection des dossiers utilisateurs</p>
+                        </div>
+                    </details>
+
+                    <details class="objectif-item">
+                        <summary class="objectif-title">🌐 Accessibilité externe</summary>
+                        <div class="objectif-content">
+                            <p>- Configuration d'accès VPN sécurisé<br>
+                               - Partage de fichiers externalisé<br>
+                               - Supervision des accès 24/7</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Solution -->
+        <section class="mes-explanation animated-card" id="mes-explanation">
+            <div class="explanation-content">
+                <h2><i class="fas fa-cogs"></i> Architecture Technique</h2>
+                <div class="mes-grid">
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-server"></i></div>
+                        <h3>Services Windows</h3>
+                        <p>Déploiement d'Active Directory avec réplication multi-serveur</p>
+                        <div class="tech-badges">
+                            <span class="badge">Windows Server 2022</span>
+                            <span class="badge">PowerShell</span>
+                            <span class="badge">GPO</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Sécurité Réseau</h3>
+                        <p>Configuration avancée du pare-feu Stormshield SN310</p>
+                        <div class="tech-badges">
+                            <span class="badge">Stormshield OS</span>
+                            <span class="badge">VPN SSL</span>
+                            <span class="badge">IDS/IPS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-database"></i></div>
+                        <h3>Stockage</h3>
+                        <p>Espace partagé sécurisé avec quotas et historisation</p>
+                        <div class="tech-badges">
+                            <span class="badge">DFS</span>
+                            <span class="badge">NTFS</span>
+                            <span class="badge">Veeam Backup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Défis -->
+        <section class="tech-challenge animated-card" id="tech-challenge">
+            <div class="challenge-content">
+                <h2><i class="fas fa-exclamation-triangle"></i> Défis Techniques</h2>
+                <div class="challenge-grid">
+                    <div class="challenge-card" style="--index: 0">
+                        <span class="hover-indicator">Voir</span>
+                        <div class="challenge-number">01</div>
+                        <h3>Migration sans interruption</h3>
+                        <div class="solution">
+                            <i class="fas fa-sync-alt"></i>
+                            Planification en maintenance fenêtrée
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-card" style="--index: 1">
+                        <span class="hover-indicator">Voir</span>
+                        <div class="challenge-number">02</div>
+                        <h3>Double authentification</h3>
+                        <div class="solution">
+                            <i class="fas fa-mobile-alt"></i>
+                            Intégration Azure MFA
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-card" style="--index: 2">
+                        <span class="hover-indicator">Voir</span>
+                        <div class="challenge-number">03</div>
+                        <h3>Partage de connexion</h3>
+                        <div class="solution">
+                            <i class="fas fa-network-wired"></i>
+                            VLAN séparés avec QoS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation -->
+        <section class="documentation-section" id="doc">
+            <h2 class="section-title animate-slide-up"><i class="fas fa-archive"></i> Documentation Projet</h2>
+            <div class="doc-categories">
+                <details class="doc-category" open>
+                    <summary class="category-header">
+                        <i class="fas fa-file-contract"></i> Cahier des charges
+                        <span class="file-count">2 documents</span>
+                    </summary>
+                    <div class="doc-grid">
+                        <a href="doc/BEG/cahier-des-charges.pdf" class="doc-card">
+                            <div class="doc-preview" data-filetype="PDF"></div>
+                            <div class="doc-info">
+                                <h3>Cahier des charges v2</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">1.8 Mo</span>
+                                    <span class="file-date">15/09/2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </details>
+
+                <details class="doc-category">
+                    <summary class="category-header">
+                        <i class="fas fa-code"></i> Configurations
+                        <span class="file-count">3 documents</span>
+                    </summary>
+                    <div class="doc-grid">
+                        <a href="doc/BEG/plan-adressage.pdf" class="doc-card">
+                            <div class="doc-preview" data-filetype="PDF"></div>
+                            <div class="doc-info">
+                                <h3>Plan d'adressage IP</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">850 Ko</span>
+                                    <span class="file-date">20/09/2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doc/BEG/scripts-powershell.zip" class="doc-card">
+                            <div class="doc-preview" data-filetype="ZIP"></div>
+                            <div class="doc-info">
+                                <h3>Scripts d'automatisation</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">2.4 Mo</span>
+                                    <span class="file-date">25/09/2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animated-footer">
+        <div class="footer-wave"></div>
+        <p class="footer-text floating">&copy; 2025 Portfolio BTS SIO - Projet fondateur IUTo</p>
+    </footer>
 </body>
 </html>
