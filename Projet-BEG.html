@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet BEG - Portfolio BTS SIO</title>
+    <title>Projet BEG Infrastructure - Portfolio BTS SIO</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Projets.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -14,13 +14,13 @@
         <div class="nav-content">
             <ul>
                 <li><a href="index.html#home">Accueil</a></li>
-                <li><a href="#project-header">Objectif</a></li>
-                <li><a href="#mes-explanation">Solution</a></li>
+                <li><a href="#project-header">Objectifs</a></li>
+                <li><a href="#mes-explanation">Implémentation</a></li>
                 <li><a href="#tech-challenge">Défis</a></li>
                 <li><a href="#doc">Documentation</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
-             <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
                 <input type="checkbox" id="themeToggle" class="themeToggleInput" />
                 <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
                     <mask id="moon-mask">
@@ -50,92 +50,105 @@
                 </div>
                 <div class="hero-tags">
                     <span class="tag">Active Directory</span>
-                    <span class="tag">Sécurité Réseau</span>
-                    <span class="tag">Stormshield</span>
-                </div>
-                <div class="scrolldown">
-                    <div class="chevrons">
-                        <div class="chevrondown"></div>
-                        <div class="chevrondown"></div>
-                    </div>
+                    <span class="tag">Cisco VLAN</span>
+                    <span class="tag">Serveur Web</span>
                 </div>
             </div>
             <div class="hero-background"></div>
         </section>
 
-        <!-- Section Objectif -->
+        <!-- Section Objectifs -->
         <section class="project-header" id="project-header">
-            <h1 class="gradient-text">BEG Architecture</h1>
+            <h1 class="gradient-text">Infrastructure BEG</h1>
             <div class="project-context glassmorphism">
-                <h2><i class="fas fa-industry"></i> Mission du projet</h2>
-                <p>Refonte du système d'information suite à un changement de prestataire et déménagement</p>
+                <h2><i class="fas fa-server"></i> Objectifs Techniques</h2>
+                <p>Mise en place d'une infrastructure de base avec services essentiels</p>
                 
                 <div class="objectifs-container">
                     <details class="objectif-item">
-                        <summary class="objectif-title">🛡️ Sécurisation de l'infrastructure</summary>
+                        <summary class="objectif-title">📁 Services de base</summary>
                         <div class="objectif-content">
-                            <p>- Implémentation d'un pare-feu Stormshield<br>
-                               - Audit de sécurité réseau complet<br>
-                               - Plan de continuité d'activité (PCA)</p>
+                            <p>- Installation d'Active Directory Windows Server 2022<br>
+                               - Configuration d'un serveur de fichiers partagés<br>
+                               - Déploiement d'un serveur web IIS</p>
                         </div>
                     </details>
 
                     <details class="objectif-item">
-                        <summary class="objectif-title">📂 Gestion centralisée</summary>
+                        <summary class="objectif-title">🔧 Infrastructure réseau</summary>
                         <div class="objectif-content">
-                            <p>- Migration vers Active Directory<br>
-                               - Mise en place de profils itinérants<br>
-                               - Redirection des dossiers utilisateurs</p>
+                            <p>- Configuration de VLANs sur switch Cisco 2960<br>
+                               - Routage inter-VLAN sur routeur Cisco 1841<br>
+                               - Sécurité basique des ports</p>
                         </div>
                     </details>
 
                     <details class="objectif-item">
-                        <summary class="objectif-title">🌐 Accessibilité externe</summary>
+                        <summary class="objectif-title">💾 Sauvegarde</summary>
                         <div class="objectif-content">
-                            <p>- Configuration d'accès VPN sécurisé<br>
-                               - Partage de fichiers externalisé<br>
-                               - Supervision des accès 24/7</p>
+                            <p>- Mise en place de Windows Server Backup<br>
+                               - Planification des sauvegardes quotidiennes<br>
+                               - Test de restauration</p>
                         </div>
                     </details>
                 </div>
             </div>
         </section>
 
-        <!-- Section Solution -->
+        <!-- Section Implémentation -->
         <section class="mes-explanation animated-card" id="mes-explanation">
             <div class="explanation-content">
-                <h2><i class="fas fa-cogs"></i> Architecture Technique</h2>
+                <h2><i class="fas fa-network-wired"></i> Architecture Technique</h2>
                 <div class="mes-grid">
                     <div class="mes-card">
-                        <div class="mes-icon"><i class="fas fa-server"></i></div>
-                        <h3>Services Windows</h3>
-                        <p>Déploiement d'Active Directory avec réplication multi-serveur</p>
+                        <div class="mes-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3>Active Directory</h3>
+                        <p>Déploiement de l'annuaire avec :
+                            <br>- GPO basiques
+                            <br>- Utilisateurs/profils
+                        </p>
                         <div class="tech-badges">
                             <span class="badge">Windows Server 2022</span>
                             <span class="badge">PowerShell</span>
-                            <span class="badge">GPO</span>
                         </div>
                     </div>
                     
                     <div class="mes-card">
-                        <div class="mes-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3>Sécurité Réseau</h3>
-                        <p>Configuration avancée du pare-feu Stormshield SN310</p>
-                        <div class="tech-badges">
-                            <span class="badge">Stormshield OS</span>
-                            <span class="badge">VPN SSL</span>
-                            <span class="badge">IDS/IPS</span>
-                        </div>
-                    </div>
-                    
-                    <div class="mes-card">
-                        <div class="mes-icon"><i class="fas fa-database"></i></div>
-                        <h3>Stockage</h3>
-                        <p>Espace partagé sécurisé avec quotas et historisation</p>
+                        <div class="mes-icon"><i class="fas fa-folder-open"></i></div>
+                        <h3>Serveur de Fichiers</h3>
+                        <p>Partage réseau sécurisé :
+                            <br>- Permissions NTFS
+                            <br>- Quotas utilisateurs
+                        </p>
                         <div class="tech-badges">
                             <span class="badge">DFS</span>
-                            <span class="badge">NTFS</span>
-                            <span class="badge">Veeam Backup</span>
+                            <span class="badge">Audit</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Serveur Web</h3>
+                        <p>Hébergement interne :
+                            <br>- Sites vitrine HTML/CSS
+                            <br>- Accès intranet
+                        </p>
+                        <div class="tech-badges">
+                            <span class="badge">IIS</span>
+                            <span class="badge">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-hdd"></i></div>
+                        <h3>Sauvegarde</h3>
+                        <p>Solution de backup :
+                            <br>- Planification quotidienne
+                            <br>- Stockage externe
+                        </p>
+                        <div class="tech-badges">
+                            <span class="badge">Windows Backup</span>
+                            <span class="badge">Veeam</span>
                         </div>
                     </div>
                 </div>
@@ -145,35 +158,32 @@
         <!-- Section Défis -->
         <section class="tech-challenge animated-card" id="tech-challenge">
             <div class="challenge-content">
-                <h2><i class="fas fa-exclamation-triangle"></i> Défis Techniques</h2>
+                <h2><i class="fas fa-tools"></i> Défis Rencontrés</h2>
                 <div class="challenge-grid">
                     <div class="challenge-card" style="--index: 0">
-                        <span class="hover-indicator">Voir</span>
                         <div class="challenge-number">01</div>
-                        <h3>Migration sans interruption</h3>
+                        <h3>Migration AD</h3>
                         <div class="solution">
-                            <i class="fas fa-sync-alt"></i>
-                            Planification en maintenance fenêtrée
+                            <i class="fas fa-users"></i>
+                            Script PowerShell de migration utilisateurs
                         </div>
                     </div>
                     
                     <div class="challenge-card" style="--index: 1">
-                        <span class="hover-indicator">Voir</span>
                         <div class="challenge-number">02</div>
-                        <h3>Double authentification</h3>
+                        <h3>Configuration VLAN</h3>
                         <div class="solution">
-                            <i class="fas fa-mobile-alt"></i>
-                            Intégration Azure MFA
+                            <i class="fas fa-ethernet"></i>
+                            Segmentation réseau (Clients/Serveurs)
                         </div>
                     </div>
                     
                     <div class="challenge-card" style="--index: 2">
-                        <span class="hover-indicator">Voir</span>
                         <div class="challenge-number">03</div>
-                        <h3>Partage de connexion</h3>
+                        <h3>Routage Inter-VLAN</h3>
                         <div class="solution">
-                            <i class="fas fa-network-wired"></i>
-                            VLAN séparés avec QoS
+                            <i class="fas fa-route"></i>
+                            Configuration routeur Cisco 1841
                         </div>
                     </div>
                 </div>
@@ -182,21 +192,31 @@
 
         <!-- Documentation -->
         <section class="documentation-section" id="doc">
-            <h2 class="section-title animate-slide-up"><i class="fas fa-archive"></i> Documentation Projet</h2>
+            <h2 class="section-title animate-slide-up"><i class="fas fa-folder-open"></i> Documentation Technique</h2>
             <div class="doc-categories">
                 <details class="doc-category" open>
                     <summary class="category-header">
-                        <i class="fas fa-file-contract"></i> Cahier des charges
-                        <span class="file-count">2 documents</span>
+                        <i class="fas fa-file-alt"></i> Configurations Réseau
+                        <span class="file-count">3 documents</span>
                     </summary>
                     <div class="doc-grid">
-                        <a href="doc/BEG/cahier-des-charges.pdf" class="doc-card">
+                        <a href="doc/BEG/schema-reseau.pdf" class="doc-card">
                             <div class="doc-preview" data-filetype="PDF"></div>
                             <div class="doc-info">
-                                <h3>Cahier des charges v2</h3>
+                                <h3>Schéma réseau final</h3>
                                 <div class="doc-meta">
-                                    <span class="file-size">1.8 Mo</span>
-                                    <span class="file-date">15/09/2024</span>
+                                    <span class="file-size">1.2 Mo</span>
+                                    <span class="file-date">15/10/2024</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="doc/BEG/config-cisco.txt" class="doc-card">
+                            <div class="doc-preview" data-filetype="TXT"></div>
+                            <div class="doc-info">
+                                <h3>Configurations Cisco</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">45 Ko</span>
+                                    <span class="file-date">18/10/2024</span>
                                 </div>
                             </div>
                         </a>
@@ -205,27 +225,17 @@
 
                 <details class="doc-category">
                     <summary class="category-header">
-                        <i class="fas fa-code"></i> Configurations
-                        <span class="file-count">3 documents</span>
+                        <i class="fas fa-cogs"></i> Procédures
+                        <span class="file-count">2 documents</span>
                     </summary>
                     <div class="doc-grid">
-                        <a href="doc/BEG/plan-adressage.pdf" class="doc-card">
+                        <a href="doc/BEG/guide-ad.pdf" class="doc-card">
                             <div class="doc-preview" data-filetype="PDF"></div>
                             <div class="doc-info">
-                                <h3>Plan d'adressage IP</h3>
+                                <h3>Guide AD</h3>
                                 <div class="doc-meta">
-                                    <span class="file-size">850 Ko</span>
-                                    <span class="file-date">20/09/2024</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="doc/BEG/scripts-powershell.zip" class="doc-card">
-                            <div class="doc-preview" data-filetype="ZIP"></div>
-                            <div class="doc-info">
-                                <h3>Scripts d'automatisation</h3>
-                                <div class="doc-meta">
-                                    <span class="file-size">2.4 Mo</span>
-                                    <span class="file-date">25/09/2024</span>
+                                    <span class="file-size">890 Ko</span>
+                                    <span class="file-date">20/10/2024</span>
                                 </div>
                             </div>
                         </a>
@@ -236,8 +246,7 @@
     </main>
 
     <footer class="animated-footer">
-        <div class="footer-wave"></div>
-        <p class="footer-text floating">&copy; 2025 Portfolio BTS SIO - Projet fondateur IUTo</p>
+        <p class="footer-text floating">&copy; 2025 Portfolio BTS SIO - Base du projet IUTo</p>
     </footer>
 </body>
 </html>
