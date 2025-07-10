@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Learning Tree - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Projets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="media/flavico.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+</head>
+<body class="body-project">
+    <nav id="navbar">
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html#home">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#diff">Étapes du Projet</a></li>
+                <li><a href="#solution">Solutions</a></li>
+                <li><a href="#doc">Documentations</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <!-- Bouton pour basculer entre le mode clair et le mode sombre -->
+            <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
+                <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                <svg width="10" height="10" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                    <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                    </mask>
+                    <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                    <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </nav>
+    <main class="project-container">
+        <!-- Section héro -->
+        <section class="project-hero">
+            <div class="hero-content">
+                <div class="logo-container">
+                    <img src="media/media-project/learning_tree_logo.png" alt="logo_learning_tree" class="entreprise-logo">
+                </div>
+                <div class="hero-tags">
+                    <span class="tag">Réseau</span>
+                    <span class="tag">Cisco</span>
+                    <span class="tag">Sécurité</span>
+                </div>
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Section de présentation du projet -->
+        <section class="project-header" id="presentation">
+            <h1 class="gradient-text">Infrastructure Réseau Learning Tree</h1>
+            <div class="project-context glassmorphism">
+                <h2><i class="fas fa-building"></i> Contexte du Projet</h2>
+                <p>Learning Tree a confié à notre société de service la mise en place complète de leur infrastructure réseau :</p>
+                <ul class="mes-features">
+                    <li>🔧 Conception de l'infrastructure réseau (devis et schéma)</li>
+                    <li>🔌 Câblage physique de l'ensemble des locaux</li>
+                    <li>🛡️ Configuration des équipements Cisco (switchs, routeurs)</li>
+                    <li>🌐 Mise en place d'un accès internet mutualisé sécurisé</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tech-challenge animated-card" id="diff">
+            <div class="challenge-content">
+                <h2><i class="fas fa-tasks"></i> Étapes du Projet</h2>
+                <div class="challenge-grid">
+                    <div class="challenge-card" style="--index: 0">
+                        <span class="hover-indicator">Voir</span>
+                        <div class="challenge-number">01</div>
+                        <h3>Conception Infrastructure</h3>
+                        <div class="solution">
+                            <i class="fas fa-drafting-compass"></i>
+                            Élaboration du devis et schéma réseau
+                        </div>
+                    </div>
+                    <div class="challenge-card"style="--index: 1">
+                        <span class="hover-indicator">Voir</span>
+                        <div class="challenge-number">02</div>
+                        <h3>Câblage Physique</h3>
+                        <div class="solution">
+                            <i class="fas fa-ethernet"></i>
+                            Installation des câbles et prises réseau
+                        </div>
+                    </div>
+                    <div class="challenge-card"style="--index: 2">
+                        <span class="hover-indicator">Voir</span>
+                        <div class="challenge-number">03</div>
+                        <h3>Configuration Cisco</h3>
+                        <div class="solution">
+                            <i class="fas fa-server"></i>
+                            Paramétrage des équipements actifs
+                        </div>
+                    </div>
+                    <div class="challenge-card"style="--index: 3">
+                        <span class="hover-indicator">Voir</span>
+                        <div class="challenge-number">04</div>
+                        <h3>Internet Mutualisé</h3>
+                        <div class="solution">
+                            <i class="fas fa-globe"></i>
+                            Configuration du routeur avec accès mutualisé
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Section solutions techniques -->
+        <section class="mes-explanation animated-card" id="solution">
+            <div class="explanation-content">
+                <h2><i class="fas fa-wrench"></i> Solutions Techniques</h2>
+                <div class="mes-grid">
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>Conception Réseau</h3>
+                        <p>Architecture réseau optimisée avec segmentation VLAN et sécurité avancée</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Visio</span>
+                            <span class="tech-badge">Packet Tracer</span>
+                        </div>
+                    </div>
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-plug"></i></div>
+                        <h3>Câblage Structuré</h3>
+                        <p>Installation de câbles Cat6 avec normes professionnelles et gestion des brassages</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">RJ45</span>
+                            <span class="tech-badge">PATCH PANEL</span>
+                        </div>
+                    </div>
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Sécurité Cisco</h3>
+                        <p>Configuration des ACL, VLANs et politiques de sécurité sur les équipements</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Cisco IOS</span>
+                            <span class="tech-badge">ACL</span>
+                        </div>
+                    </div>
+                    <div class="mes-card">
+                        <div class="mes-icon"><i class="fas fa-route"></i></div>
+                        <h3>Routeur Mutualisé</h3>
+                        <p>Configuration NAT et QoS pour l'accès internet partagé avec bande passante garantie</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">NAT</span>
+                            <span class="tech-badge">QoS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section documentation -->
+        <section class="documentation-section" id="doc">
+            <h2 class="section-title animate-slide-up"><i class="fas fa-archive"></i> Documentation Technique</h2>
+            
+            <div class="doc-categories">
+                <!-- Catégorie 1 -->
+                <details class="doc-category" open>
+                    <summary class="category-header">
+                        <i class="fas fa-file-contract"></i> Conception
+                        <span class="file-count">3 documents</span>
+                    </summary>
+                    <div class="doc-grid">
+                        <a href="doc/Doc-Projet-LT/Devis_Infrastructure_Learning_Tree.pdf" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Devis Infrastructure</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">850 Ko</span>
+                                    <span class="file-date">15/05/2025</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="doc/Doc-Projet-LT/Schema_Reseau_Principal.vsdx" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Schéma Réseau Principal</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">2.4 Mo</span>
+                                    <span class="file-date">18/05/2025</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="doc/Doc-Projet-LT/Plan_Implantation_Cables.pdf" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Plan Implantation Câbles</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">1.8 Mo</span>
+                                    <span class="file-date">20/05/2025</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </details>
+
+                <!-- Catégorie 2 -->
+                <details class="doc-category">
+                    <summary class="category-header">
+                        <i class="fas fa-code"></i> Configuration
+                        <span class="file-count">4 documents</span>
+                    </summary>
+                    <div class="doc-grid">
+                        <a href="doc/Doc-Projet-LT/Config_Switch_Core.txt" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Configuration Switch Core</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">78 Ko</span>
+                                    <span class="file-date">25/05/2025</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="doc/Doc-Projet-LT/Config_Routeur_Mutualise.txt" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Configuration Routeur</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">56 Ko</span>
+                                    <span class="file-date">28/05/2025</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="doc/Doc-Projet-LT/Plan_Adressage_IP.xlsx" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Plan d'Adressage IP</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">120 Ko</span>
+                                    <span class="file-date">22/05/2025</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="doc/Doc-Projet-LT/Politiques_Securite.pdf" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Politiques de Sécurité</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">420 Ko</span>
+                                    <span class="file-date">30/05/2025</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </details>
+
+                <!-- Catégorie 3 -->
+                <details class="doc-category">
+                    <summary class="category-header">
+                        <i class="fas fa-clipboard-check"></i> Tests & Validation
+                        <span class="file-count">2 documents</span>
+                    </summary>
+                    <div class="doc-grid">
+                        <a href="doc/Doc-Projet-LT/Rapport_Test_Performance.pdf" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Rapport Tests Performance</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">1.2 Mo</span>
+                                    <span class="file-date">05/06/2025</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="doc/Doc-Projet-LT/Audit_Securite_Reseau.pdf" class="doc-card">
+                            <div class="doc-preview"></div>
+                            <div class="doc-info">
+                                <h3>Audit Sécurité Réseau</h3>
+                                <div class="doc-meta">
+                                    <span class="file-size">980 Ko</span>
+                                    <span class="file-date">08/06/2025</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <section class="more-projects">
+                        <a href="index.html#projects" class="project-link">
+                            <i class="fas fa-arrow-left"></i>
+                            Voir les autres projets
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="animated-footer">
+        <div class="footer-wave"></div>
+        <p class="footer-text floating">&copy; 2025 Portfolio BTS SIO - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
